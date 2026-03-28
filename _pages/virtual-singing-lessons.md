@@ -7,67 +7,76 @@ permalink: /virtual-singing-lessons/
 
 <section class="service-hero">
   <div class="container">
-    <!-- REPLACE WITH VIRTUAL LESSON PHOTO -->
-    <div style="background: #1a1a1a; border: 1px solid #333; border-radius: 8px; aspect-ratio: 21/9; display: flex; align-items: center; justify-content: center; color: #666; font-size: 0.875rem; text-align: center; padding: 2rem; margin-bottom: 2rem; max-width: 800px; margin-left: auto; margin-right: auto;">
-      [REPLACE WITH VIRTUAL LESSON PHOTO]
-    </div>
-    
-    <h1 class="service-title">Virtual Singing Lessons from Anywhere</h1>
-    <p class="hero-subtitle">FaceTime • WhatsApp • Microsoft Teams</p>
+    <h1 class="service-title">Virtual Singing Lessons</h1>
+    <p class="hero-subtitle">World-Class Vocal Coaching from Anywhere in the World</p>
   </div>
 </section>
 
 <section class="service-content">
   <div class="container-narrow">
     
-    <p style="font-size: 1.25rem; color: #a3a3a3; margin-bottom: 2rem;"><strong>Virtual lessons bring professional training to you.</strong> No travel, no studios — just you, your device, and 25+ years of experience.</p>
+    <!-- HEADSHOT PHOTO -->
+    <img src="{{ '/assets/images/matt-headshot.jpg' | relative_url }}" alt="Matt Thompson teaching from his studio" style="width: 100%; max-width: 500px; margin: 0 auto 2rem; display: block; border-radius: 8px;">
 
-    <h2>Why Go Virtual?</h2>
+    <p style="font-size: 1.25rem; color: #a3a3a3; margin-bottom: 2rem;"><strong>I teach students from London to Los Angeles, Sydney to Singapore.</strong> Virtual lessons mean location doesn't matter — only your commitment does.</p>
+
+    <h2>Why Virtual Works</h2>
     
-    <p><strong>Comfort:</strong> Sing better when you're relaxed. Your living room beats a studio any day.</p>
+    <p>I was skeptical at first. But after years of teaching this way, I've seen students make faster progress than in physical studios. Here's why:</p>
+
+    <ul>
+      <li><strong>Comfort</strong> — You're in your own space, relaxed and ready to learn</li>
+      <li><strong>Consistency</strong> — No travel time means fewer missed lessons</li>
+      <li><strong>Focus</strong> — The screen keeps you engaged with technique, not distraction</li>
+      <li><strong>Recordings</strong> — Every lesson can be recorded for practice</li>
+    </ul>
+
+    <h2>How It Works</h2>
     
-    <p><strong>Convenience:</strong> Book a 60-minute lesson, invest exactly 60 minutes. No commute.</p>
-    
-    <p><strong>Recordings:</strong> Every lesson recorded (with permission). Practice with the actual lesson.</p>
+    <ol>
+      <li>Book your lesson through the website or email</li>
+      <li>I send you a meeting link (FaceTime, WhatsApp, or Teams)</li>
+      <li>We connect at your scheduled time</li>
+      <li>Full vocal lesson just like in-person — warm-ups, technique, repertoire</li>
+      <li>You get a recording and practice notes after</li>
+    </ol>
 
     <h2>What You Need</h2>
     
-    <p><strong>Required:</strong> Smartphone/tablet/computer with camera. Internet. Space to sing.</p>
+    <p>Just three things:</p>
     
-    <p><strong>Nice to have:</strong> Headphones (reduce echo). Good lighting.</p>
+    <ol>
+      <li>A phone, tablet, or computer with a camera</li>
+      <li>An internet connection (mobile data works fine)</li>
+      <li>A space where you can sing without disturbing neighbors</li>
+    </ol>
     
-    <p>That's it. Nothing fancy.</p>
+    <p>That's it. No expensive microphones, no special equipment, no studio rental.</p>
 
-    <!-- REPLACE WITH PLATFORM LOGOS OR SCREENSHOT -->
-    <div style="background: #1a1a1a; border: 1px solid #333; border-radius: 8px; aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; color: #666; font-size: 0.875rem; text-align: center; padding: 2rem; margin: 3rem 0;">
-      [REPLACE WITH PLATFORM IMAGE]
-    </div>
+    <!-- LESSON SETUP PHOTO -->
+    <img src="{{ '/assets/images/lesson-setup.jpg' | relative_url }}" alt="Virtual singing lesson setup" style="width: 100%; border-radius: 8px; margin: 3rem 0; display: block;">
 
-    <h2>Platforms</h2>
+    <h2>Time Zones</h2>
     
-    <p><strong>FaceTime</strong> — Best for iPhone/iPad/Mac. Great audio, no setup.</p>
+    <p>I teach across time zones regularly. Currently working with students in:</p>
     
-    <p><strong>WhatsApp</strong> — Works on anything. Most people already have it.</p>
+    <ul>
+      <li>UK and Europe</li>
+      <li>East and West Coast USA</li>
+      <li>Canada</li>
+      <li>Australia</li>
+      <li>Middle East</li>
+    </ul>
     
-    <p><strong>Microsoft Teams</strong> — Browser-based, no account needed.</p>
+    <p>We'll find a time that works for both of us.</p>
 
-    <h2>Pricing</h2>
-    
-    <div style="background: #1a1a1a; padding: 2rem; border-radius: 8px; margin: 2rem 0; border: 1px solid #333;">
-      <h3>£25 Virtual Consultation (30 min)</h3>
-      <p>Try virtual format, assess your voice, see if it's right for you.</p>
+    <div style="background: #1a1a1a; padding: 2rem; border-radius: 8px; margin: 3rem 0; border: 1px solid #333; text-align: center;">
+      <h3>£25 Consultation</h3>
       
-      <a href="{{ '/contact' | relative_url }}" class="btn btn-secondary">Book &rarr;</a>
-    </div>
-    
-    <div style="background: linear-gradient(135deg, #1a1a1a 0%, #111 100%); padding: 2rem; border-radius: 8px; margin: 2rem 0; border: 1px solid #ff6b4a;">
-      <h3>£65 Virtual Lesson (60 min)</h3>
-      <p style="color: #ff6b4a;">Save £15 (was £80)</p>
+      <p>30-minute session to try it out. Vocal assessment, goal discussion, sample exercises. No obligation.</p>
       
-      <a href="{{ '/contact' | relative_url }}" class="btn btn-primary">Book &rarr;</a>
+      <a href="{{ '/contact' | relative_url }}" class="btn btn-primary">Book Now &rarr;</a>
     </div>
-
-    <p>Questions? <a href="{{ '/contact' | relative_url }}">Send an enquiry</a>.</p>
 
   </div>
 </section>

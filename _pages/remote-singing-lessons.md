@@ -7,67 +7,52 @@ permalink: /remote-singing-lessons/
 
 <section class="service-hero">
   <div class="container">
-    <!-- REPLACE WITH TRAVEL/LOCATION PHOTO -->
-    <div style="background: #1a1a1a; border: 1px solid #333; border-radius: 8px; aspect-ratio: 21/9; display: flex; align-items: center; justify-content: center; color: #666; font-size: 0.875rem; text-align: center; padding: 2rem; margin-bottom: 2rem; max-width: 800px; margin-left: auto; margin-right: auto;">
-      [REPLACE WITH TRAVEL/LOCATION PHOTO]
-    </div>
-    
-    <h1 class="service-title">Remote Singing Lessons for Travelers</h1>
-    <p class="hero-subtitle">For Touring Musicians, Actors on Location &amp; Digital Nomads</p>
+    <h1 class="service-title">Remote Singing Lessons</h1>
+    <p class="hero-subtitle">For Touring Musicians, Actors on Location, and Digital Nomads</p>
   </div>
 </section>
 
 <section class="service-content">
   <div class="container-narrow">
     
-    <p style="font-size: 1.25rem; color: #a3a3a3; margin-bottom: 2rem;"><strong>Your training shouldn't stop because you're on the move.</strong> Whether you're touring, filming on location, or living the van life — we keep your voice progressing.</p>
+    <!-- MOTORHOME PHOTO -->
+    <img src="{{ '/assets/images/matt-motorhome.jpg' | relative_url }}" alt="Matt Thompson teaching from his mobile studio motorhome" style="width: 100%; border-radius: 8px; margin: 0 auto 2rem; display: block;">
+
+    <p style="font-size: 1.25rem; color: #a3a3a3; margin-bottom: 2rem;"><strong>I teach from a mobile studio.</strong> That means whether you're touring Europe in a van, filming on location in New Zealand, or living the digital nomad life, your vocal coaching travels with you.</p>
 
     <h2>Who This Is For</h2>
     
-    <p><strong>Touring musicians</strong> — On the road with your band? Maintain vocal health between gigs, prep for shows, work on new material. From hotel rooms or tour buses.</p>
+    <p><strong>Touring musicians</strong> who need to keep their voice in shape while on the road. <strong>Actors</strong> filming on location who need to prepare for singing roles. <strong>Digital nomads</strong> who want to work on their voice while exploring the world.</p>
     
-    <p><strong>Actors on location</strong> — Filming away from home for weeks? Don't let your training slip. Prepare for singing roles or maintain your instrument.</p>
-    
-    <p><strong>Digital nomads</strong> — Working remotely from different countries? I teach across time zones and accommodate shifting schedules.</p>
-    
-    <p><strong>Business travelers</strong> — Constantly on planes? Keep your training consistent even when your location isn't.</p>
+    <p>If your lifestyle doesn't fit traditional weekly lessons in one place, this is for you.</p>
 
-    <h2>Handling Travel Challenges</h2>
+    <h2>Flexible Scheduling</h2>
     
-    <p><strong>Time zones:</strong> My booking system shows availability in your local time — wherever you are.</p>
+    <p>Tour schedules change. Shoots run late. Travel plans shift. I get it.</p>
     
-    <p><strong>Internet quality:</strong> FaceTime, WhatsApp, or Teams — we switch if one isn't working.</p>
-    
-    <p><strong>Schedule changes:</strong> Reschedule with 24+ hours notice, no penalty. Short notice? Contact me, we'll sort it.</p>
+    <p>That's why I offer flexible booking for remote students. Need to move your lesson because your flight was delayed? No problem. Have a gap in your tour schedule and want to book an intensive week? We can do that.</p>
 
-    <!-- REPLACE WITH MOBILE SETUP PHOTO -->
-    <div style="background: #1a1a1a; border: 1px solid #333; border-radius: 8px; aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; color: #666; font-size: 0.875rem; text-align: center; padding: 2rem; margin: 3rem 0;">
-      [REPLACE WITH MOBILE SETUP PHOTO]
-    </div>
+    <h2>How I Teach from the Road</h2>
+    
+    <p>My mobile studio is fully equipped with professional audio monitoring, multiple cameras for posture analysis, and reliable internet connectivity. From your perspective, it's the same as any other online lesson — just with a coach who understands what it's like to work while traveling.</p>
 
-    <h2>Vocal Health on the Road</h2>
+    <h2>What My Remote Students Say</h2>
     
-    <p>Travel is hard on voices: dry airplane air, irregular sleep, unfamiliar climates, performance schedules.</p>
-    
-    <p>Remote lessons help you monitor vocal health, maintain technique, and prepare for performances — even from hotel bathrooms (great acoustics, actually).</p>
+    <blockquote style="border-left: 4px solid #ff6b4a; padding-left: 1.5rem; margin: 2rem 0; font-style: italic; color: #a3a3a3;">
+      "Matt kept me vocally fit through a six-month tour. We worked around soundchecks, travel days, and timezone changes. Having that consistency kept my voice healthy when it would have been easy to let technique slide."
+    </blockquote>
 
-    <h2>Pricing</h2>
+    <h2>Booking</h2>
     
-    <div style="background: #1a1a1a; padding: 2rem; border-radius: 8px; margin: 2rem 0; border: 1px solid #333;">
-      <h3>£25 Remote Consultation (30 min)</h3>
-      <p>Test your setup on the road. Check connection, assess voice, make sure it works from your location.</p>
+    <p>Send me your schedule and we'll work out a plan. Some remote students book regular weekly slots, others book intensively when they're in one place for a while. I'm flexible.</p>
+
+    <div style="background: #1a1a1a; padding: 2rem; border-radius: 8px; margin: 3rem 0; border: 1px solid #333; text-align: center;">
+      <h3>Get in Touch</h3>
       
-      <a href="{{ '/contact' | relative_url }}" class="btn btn-secondary">Book &rarr;</a>
-    </div>
-    
-    <div style="background: linear-gradient(135deg, #1a1a1a 0%, #111 100%); padding: 2rem; border-radius: 8px; margin: 2rem 0; border: 1px solid #ff6b4a;">
-      <h3>£65 Remote Lesson (60 min)</h3>
-      <p style="color: #ff6b4a;">Save £15 (was £80)</p>
+      <p>Tell me about your schedule and we'll figure out a plan that works.</p>
       
-      <a href="{{ '/contact' | relative_url }}" class="btn btn-primary">Book &rarr;</a>
+      <a href="{{ '/contact' | relative_url }}" class="btn btn-primary">Contact Matt &rarr;</a>
     </div>
-
-    <p>Questions? <a href="{{ '/contact' | relative_url }}">Send an enquiry</a>.</p>
 
   </div>
 </section>

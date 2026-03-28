@@ -7,11 +7,6 @@ permalink: /beginner-singing-lessons/
 
 <section class="service-hero">
   <div class="container">
-    <!-- REPLACE WITH BEGINNER-FRIENDLY IMAGE -->
-    <div style="background: #1a1a1a; border: 1px solid #333; border-radius: 8px; aspect-ratio: 21/9; display: flex; align-items: center; justify-content: center; color: #666; font-size: 0.875rem; text-align: center; padding: 2rem; margin-bottom: 2rem; max-width: 800px; margin-left: auto; margin-right: auto;">
-      [REPLACE WITH BEGINNER-FRIENDLY IMAGE]
-    </div>
-    
     <h1 class="service-title">Singing Lessons for Beginners</h1>
     <p class="hero-subtitle">Learn to Sing from Scratch — No Experience Required</p>
   </div>
@@ -20,68 +15,61 @@ permalink: /beginner-singing-lessons/
 <section class="service-content">
   <div class="container-narrow">
     
-    <p style="font-size: 1.25rem; color: #a3a3a3; margin-bottom: 2rem;"><strong>Never sung in front of anyone? Think you "can't sing"?</strong> You're in the right place. I've taught hundreds of absolute beginners to find their voice.</p>
+    <!-- HEADSHOT PHOTO -->
+    <img src="{{ '/assets/images/matt-headshot.jpg' | relative_url }}" alt="Matt Thompson welcoming beginners" style="width: 100%; max-width: 500px; margin: 0 auto 2rem; display: block; border-radius: 8px;">
 
-    <h2>The "I Can't Sing" Myth</h2>
+    <p style="font-size: 1.25rem; color: #a3a3a3; margin-bottom: 2rem;"><strong>If you've never sung before, or you think you "can't sing," start here.</strong> I've taught hundreds of complete beginners to find their voice. You don't need talent — you need patience and the right guidance.</p>
+
+    <h2>What If I Have No Experience?</h2>
     
-    <p>Most adults who think they can't sing were told so as children — by a teacher, a parent, a mean classmate. That single comment created a belief that stuck for decades.</p>
+    <p>Perfect. No bad habits to unlearn. We'll start from the absolute basics: breathing, posture, pitch matching, and building confidence.</p>
     
-    <p>Here's the truth:</p>
+    <p>About half my students started as complete beginners. Some came in whispering "I can't sing" and are now performing at open mics, joining choirs, or just happily singing at home without embarrassment.</p>
+
+    <h2>What to Expect</h2>
+    
+    <p>Here's how we'll start:</p>
+    
+    <ol>
+      <li><strong>Weeks 1-2:</strong> Finding your natural voice — breathing, relaxation, basic pitch matching</li>
+      <li><strong>Weeks 3-4:</strong> Building control — simple scales, vowel sounds, extending your range</li>
+      <li><strong>Weeks 5-6:</strong> Connecting to songs — applying technique to simple melodies</li>
+      <li><strong>Ongoing:</strong> Building repertoire, confidence, and developing your unique sound</li>
+    </ol>
+    
+    <p>Everyone moves at their own pace. No pressure, no judgment.</p>
+
+    <h2>You'll Learn</h2>
     
     <ul>
-      <li>Less than 4% of people are actually "tone deaf"</li>
-      <li>Singing is a skill, not a gift — it can be learned</li>
-      <li>If you can speak, you can learn to sing</li>
+      <li>Proper breathing technique (it changes everything)</li>
+      <li>How to match pitch consistently</li>
+      <li>Extending your vocal range safely</li>
+      <li>Singing without straining or hurting your voice</li>
+      <li>Building confidence to sing in front of others</li>
+      <li>Understanding your unique voice and what it can do</li>
     </ul>
 
-    <h2>What Makes My Beginner Lessons Different</h2>
-    
-    <p><strong>No judgment.</strong> This is a safe space. I've worked with beginners who could barely make a sound, and within weeks they were singing with confidence.</p>
-    
-    <p><strong>Simple language.</strong> No confusing terminology. I use everyday words and concrete sensations you can feel.</p>
-    
-    <p><strong>Your pace.</strong> No pressure, no rush. Some progress fast; others need more time. Both are normal.</p>
+    <!-- LESSON SETUP PHOTO -->
+    <img src="{{ '/assets/images/lesson-setup.jpg' | relative_url }}" alt="Beginner-friendly lesson setup" style="width: 100%; border-radius: 8px; margin: 3rem 0; display: block;">
 
-    <!-- REPLACE WITH LESSON PROGRESSION IMAGE -->
-    <div style="background: #1a1a1a; border: 1px solid #333; border-radius: 8px; aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; color: #666; font-size: 0.875rem; text-align: center; padding: 2rem; margin: 3rem 0;">
-      [REPLACE WITH LESSON PROGRESSION IMAGE]
-    </div>
+    <h2>Beginner-Friendly Approach</h2>
+    
+    <p>I explain things in plain English. No confusing jargon, no making you feel small for not knowing terms. We'll use imagery and sensation — "breathe low like you're smelling a flower," "feel the buzz in your lips" — instead of abstract concepts.</p>
+    
+    <p>You get lesson recordings so you can practice at home. And I'll give you clear, simple exercises — five to ten minutes a day is enough when you're starting out.</p>
 
-    <h2>What Beginners Learn</h2>
+    <h2>What If I Don't Like My First Lesson?</h2>
     
-    <p><strong>First few lessons:</strong> Getting comfortable making sounds, understanding your range, basic breath support, simple pitch matching.</p>
-    
-    <p><strong>After 4-8 lessons:</strong> Expanding your range, smoothing out breaks, releasing tension, clearer tone.</p>
-    
-    <p><strong>After 9-12 lessons:</strong> Singing with confidence, putting it all together, performance techniques, sustainable practice routine.</p>
+    <p>It's free. Seriously. If you're not happy after your first lesson, you don't pay. I want you to feel comfortable taking the first step.</p>
 
-    <h2>Common Concerns</h2>
-    
-    <p><strong>"I'm too old to start"</strong> — My beginner students range from teenagers to people in their 60s and 70s. It's never too late.</p>
-    
-    <p><strong>"I'll be embarrassed"</strong> — The fear is real, but unnecessary. There's no "wrong" sound here. Just you, learning.</p>
-    
-    <p><strong>"I don't have time to practice"</strong> — 15 minutes a day is enough. Sing in the shower. Hum while driving.</p>
-
-    <h2>Pricing</h2>
-    
-    <div style="background: #1a1a1a; padding: 2rem; border-radius: 8px; margin: 2rem 0; border: 1px solid #333;">
-      <h3>£25 Beginner Consultation (30 min)</h3>
-      <p>Perfect first step. Vocal assessment, goal discussion, and a plan. No pressure.</p>
+    <div style="background: #1a1a1a; padding: 2rem; border-radius: 8px; margin: 3rem 0; border: 1px solid #333; text-align: center;">
+      <h3>£25 Consultation for Beginners</h3>
       
-      <a href="{{ '/contact' | relative_url }}" class="btn btn-secondary">Book Consultation &rarr;</a>
-    </div>
-    
-    <div style="background: linear-gradient(135deg, #1a1a1a 0%, #111 100%); padding: 2rem; border-radius: 8px; margin: 2rem 0; border: 1px solid #ff6b4a;">
-      <h3>£65 Single Lesson (60 min)</h3>
-      <p style="color: #ff6b4a;">Save £15 (was £80)</p>
+      <p>30-minute session. We'll talk about your goals (even if they're just "I want to sing without embarrassing myself"), I'll assess where you're starting from, and you'll get a taste of how I teach.</p>
       
-      <p><strong>Not happy with your first lesson? It's free.</strong></p>
-      
-      <a href="{{ '/contact' | relative_url }}" class="btn btn-primary">Book Lesson &rarr;</a>
+      <a href="{{ '/contact' | relative_url }}" class="btn btn-primary">Book Your First Lesson &rarr;</a>
     </div>
-
-    <p>Questions? <a href="{{ '/contact' | relative_url }}">Send an enquiry</a>.</p>
 
   </div>
 </section>
