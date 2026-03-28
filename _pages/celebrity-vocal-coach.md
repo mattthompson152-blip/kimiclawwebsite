@@ -7,10 +7,8 @@ permalink: /celebrity-vocal-coach/
 
 <section class="service-hero">
   <div class="container">
-    <!-- REPLACE WITH PROFESSIONAL HEADSHOT OF MATT -->
-    <div style="width: 180px; height: 180px; background: #333; border-radius: 50%; margin: 0 auto 2rem; display: flex; align-items: center; justify-content: center; color: #666; font-size: 0.75rem; text-align: center;">
-      [REPLACE WITH PROFESSIONAL HEADSHOT]
-    </div>
+    <!-- FAVORITE PHOTO - DARK SHIRT WITH PIANO -->
+    <img src="{{ '/assets/images/matt-headshot.jpg' | relative_url }}" alt="Matt Thompson, Celebrity Vocal Coach" style="width: 200px; height: 200px; object-fit: cover; border-radius: 50%; margin: 0 auto 2rem; display: block; border: 4px solid #333;">
     
     <h1 class="service-title">Celebrity Vocal Coach Matt Thompson</h1>
     <p class="hero-subtitle">25+ Years Training Recording Artists, Film Stars, and West End Performers</p>
@@ -54,10 +52,8 @@ permalink: /celebrity-vocal-coach/
       <li><strong>Complete beginners</strong> — People who've never sung before and want to see what their voice can do</li>
     </ul>
 
-    <!-- REPLACE WITH PERFORMANCE PHOTO OR STUDIO SHOT -->
-    <div style="background: #1a1a1a; border: 1px solid #333; border-radius: 8px; aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; color: #666; font-size: 0.875rem; text-align: center; padding: 2rem; margin: 3rem 0;">
-      [REPLACE WITH PERFORMANCE PHOTO OR STUDIO IMAGE]
-    </div>
+    <!-- CELEBRITY VOCAL COACH PHOTO -->
+    <img src="{{ '/assets/images/matt-celebrity-vocal-coach.png' | relative_url }}" alt="Matt Thompson with celebrity clients" style="width: 100%; border-radius: 8px; margin: 3rem 0; display: block;">
 
     <h2>What You Get</h2>
     

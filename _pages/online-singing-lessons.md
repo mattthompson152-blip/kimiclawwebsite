@@ -7,11 +7,6 @@ permalink: /online-singing-lessons/
 
 <section class="service-hero">
   <div class="container">
-    <!-- REPLACE WITH ONLINE LESSON SETUP PHOTO -->
-    <div style="background: #1a1a1a; border: 1px solid #333; border-radius: 8px; aspect-ratio: 21/9; display: flex; align-items: center; justify-content: center; color: #666; font-size: 0.875rem; text-align: center; padding: 2rem; margin-bottom: 2rem; max-width: 800px; margin-left: auto; margin-right: auto;">
-      [REPLACE WITH ONLINE LESSON SETUP PHOTO]
-    </div>
-    
     <h1 class="service-title">Online Singing Lessons</h1>
     <p class="hero-subtitle">Professional Vocal Coaching from Your Home — FaceTime • WhatsApp • Microsoft Teams</p>
   </div>
@@ -41,10 +36,8 @@ permalink: /online-singing-lessons/
     
     <p>That's it. No expensive microphones, no professional equipment. The simplicity is the point.</p>
 
-    <!-- REPLACE WITH DEVICE/SETUP PHOTO -->
-    <div style="background: #1a1a1a; border: 1px solid #333; border-radius: 8px; aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; color: #666; font-size: 0.875rem; text-align: center; padding: 2rem; margin: 3rem 0;">
-      [REPLACE WITH PHOTO OF PHONE/LAPTOP SETUP]
-    </div>
+    <!-- LESSON SETUP PHOTO -->
+    <img src="{{ '/assets/images/lesson-setup.jpg' | relative_url }}" alt="Online singing lesson setup showing phone and laptop" style="width: 100%; border-radius: 8px; margin: 3rem 0; display: block;">
 
     <h2>How a Lesson Works</h2>
     
