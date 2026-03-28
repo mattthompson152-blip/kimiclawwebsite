@@ -24,7 +24,7 @@ permalink: /thank-you/
       <li>✓ Only £25 — satisfaction guaranteed</li>
     </ul>
     
-    <a href="/#book" class="btn btn-primary btn-large" style="display: inline-block; margin-top: 1rem;">Book Your Consultation →</a>
+    <a href="{{ '/#book' | relative_url }}" class="btn btn-primary btn-large" style="display: inline-block; margin-top: 1rem;">Book Your Consultation →</a>
   </div>
   
   <p style="color: #737373; font-size: 0.875rem;">Didn't receive the email? Check your spam folder or <a href="mailto:matt@singtheeasyway.com">contact us</a>.</p>

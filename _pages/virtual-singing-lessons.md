@@ -53,7 +53,7 @@ permalink: /virtual-singing-lessons/
       
       <h4>Microsoft Teams</h4>
       <ul>
-        >li>Join via web browser — no account needed</li>
+        <li>Join via web browser — no account needed</li>
         <li>Best for computer/laptop users</li>
         <li>Automatic calendar invitations with links</li>
       </ul>

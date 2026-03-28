@@ -5,9 +5,9 @@
   "@type": "LocalBusiness",
   "name": "Sing The Easy Way",
   "description": "Online singing lessons with celebrity vocal coach Matt Thompson. 25+ years experience teaching recording artists and beginners worldwide.",
-  "url": "https://singtheeasyway.com",
-  "logo": "https://singtheeasyway.com/assets/images/logo.png",
-  "image": "https://singtheeasyway.com/assets/images/matt-thompson.jpg",
+  "url": "{{ site.url | append: site.baseurl }}",
+  "logo": "{{ '/assets/images/logo.png' | absolute_url }}",
+  "image": "{{ '/assets/images/matt-thompson.jpg' | absolute_url }}",
   "email": "matt@singtheeasyway.com",
   "priceRange": "££",
   "currenciesAccepted": "GBP, USD, EUR",
@@ -121,7 +121,7 @@
     "name": "Sing The Easy Way",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://singtheeasyway.com/assets/images/logo.png"
+      "url": "{{ '/assets/images/logo.png' | absolute_url }}"
     }
   }
 }

@@ -51,7 +51,7 @@ A proper warm-up prepares your voice for the work ahead.
 
 ### Download My Free Warm-Up Guide
 
-Get the exact routine I teach my celebrity clients: [5 Vocal Warm-Ups Professional Singers Use](/#lead-magnet)
+Get the exact routine I teach my celebrity clients: [5 Vocal Warm-Ups Professional Singers Use]({{ '/#lead-magnet' | relative_url }})
 
 ## Daily Vocal Health Habits
 

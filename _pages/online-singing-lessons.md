@@ -140,7 +140,7 @@ permalink: /online-singing-lessons/
       
       <p>I teach exclusively online from my mobile studio, bringing professional vocal coaching directly to you wherever you are in the world.</p>
       
-      <a href="/celebrity-vocal-coach" class="btn btn-secondary">Learn More About Matt →</a>
+      <a href="{{ '/celebrity-vocal-coach' | relative_url }}" class="btn btn-secondary">Learn More About Matt →</a>
 
       <h2>Ready to Start Your Singing Journey?</h2>
       
