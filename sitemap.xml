@@ -1,0 +1,96 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- HOMEPAGE -->
+  <url>
+    <loc>{{ '/' | absolute_url }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <priority>1.00</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  
+  <!-- MAIN PAGES -->
+  <url>
+    <loc>{{ '/online-singing-lessons' | absolute_url }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <priority>0.90</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <url>
+    <loc>{{ '/virtual-singing-lessons' | absolute_url }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <priority>0.90</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <url>
+    <loc>{{ '/remote-singing-lessons' | absolute_url }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <priority>0.90</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <url>
+    <loc>{{ '/beginner-singing-lessons' | absolute_url }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <priority>0.90</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <url>
+    <loc>{{ '/celebrity-vocal-coach' | absolute_url }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+    <loc>{{ '/faq' | absolute_url }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+    <loc>{{ '/blog' | absolute_url }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <priority>0.80</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <url>
+    <loc>{{ '/contact' | absolute_url }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+    <loc>{{ '/terms' | absolute_url }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <priority>0.40</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  
+  <url>
+    <loc>{{ '/privacy' | absolute_url }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <priority>0.40</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  
+  <!-- BLOG POSTS -->
+  {% for post in site.posts %}
+  <url>
+    <loc>{{ post.url | absolute_url }}</loc>
+    <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+    <priority>0.70</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  {% endfor %}
+  
+</urlset>
