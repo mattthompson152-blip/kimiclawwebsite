@@ -74,6 +74,50 @@
   margin: 0;
 }
 
+.nav-item {
+  position: relative;
+  
+  &.has-dropdown {
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: $white;
+      border: 1px solid $grey-200;
+      border-radius: 4px;
+      box-shadow: $shadow-lg;
+      min-width: 220px;
+      padding: $space-2 0;
+      margin-top: $space-2;
+      list-style: none;
+      z-index: 1001;
+      
+      li {
+        margin: 0;
+        
+        a {
+          display: block;
+          padding: $space-3 $space-4;
+          color: $grey-700;
+          text-decoration: none;
+          font-size: $text-sm;
+          transition: all $transition-fast;
+          
+          &:hover {
+            background: $grey-100;
+            color: $accent;
+          }
+        }
+      }
+    }
+    
+    &:hover .dropdown-menu {
+      display: block;
+    }
+  }
+}
+
 .nav-link {
   font-size: $text-sm;
   font-weight: 500;
