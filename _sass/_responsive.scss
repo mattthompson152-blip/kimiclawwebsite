@@ -1,27 +1,270 @@
 // Responsive styles
 
-// Mobile-first approach - these are for larger screens
+// ============================================
+// MOBILE FIRST - Base styles for small screens
+// ============================================
 
-@media (min-width: $breakpoint-sm) {
-  // Small tablet styles
-}
-
-@media (min-width: $breakpoint-md) {
-  // Tablet styles
+// Navigation - Mobile
+.primary-nav {
+  display: none;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #0a0a0a;
+  flex-direction: column;
+  padding: 2rem;
+  z-index: 999;
   
-  .hero {
-    .hero-title {
-      font-size: $text-5xl;
+  &.active {
+    display: flex;
+  }
+  
+  .nav-menu {
+    flex-direction: column;
+    gap: 1.5rem;
+    
+    li {
+      border-bottom: 1px solid #333;
+      padding-bottom: 1rem;
+    }
+  }
+  
+  .nav-item.has-dropdown {
+    .dropdown-menu {
+      position: static;
+      display: block;
+      background: transparent;
+      border: none;
+      box-shadow: none;
+      padding: 0.5rem 0 0 1rem;
+      margin-top: 0.5rem;
+      
+      li {
+        border: none;
+        padding: 0.25rem 0;
+        
+        a {
+          color: #a3a3a3;
+          padding: 0.25rem 0;
+          
+          &:hover {
+            background: transparent;
+          }
+        }
+      }
     }
   }
 }
 
-@media (min-width: $breakpoint-lg) {
-  // Desktop styles
+// Hero - Mobile
+.hero {
+  .hero-title {
+    font-size: 1.75rem;
+    line-height: 1.2;
+  }
   
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  .hero-cta {
+    flex-direction: column;
+    gap: 1rem;
+    
+    .btn {
+      width: 100%;
+    }
+  }
+}
+
+// Grid layouts - Mobile
+.stats-grid {
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.pricing-grid {
+  grid-template-columns: 1fr;
+}
+
+// Cards - Mobile
+.pricing-card {
+  &.featured {
+    transform: none;
+  }
+}
+
+// Two column grid - Mobile
+.two-col-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  
+  &.reverse-on-mobile {
+    > div:first-child {
+      order: 2;
+    }
+    > div:last-child {
+      order: 1;
+    }
+  }
+}
+
+// Forms - Mobile
+.form-group {
+  input,
+  select,
+  textarea {
+    font-size: 16px; // Prevents zoom on iOS
+  }
+}
+
+// Footer - Mobile
+.site-footer {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .footer-legal {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+// Service pages - Mobile
+.service-hero {
+  padding: 4rem 0;
+  
+  .service-title {
+    font-size: 1.75rem;
+  }
+}
+
+// Blog - Mobile
+.post-grid {
+  grid-template-columns: 1fr;
+}
+
+// Section spacing - Mobile
+.section {
+  padding: 3rem 0;
+}
+
+// ============================================
+// TABLET (576px+)
+// ============================================
+@media (min-width: 576px) {
+  .hero {
+    .hero-title {
+      font-size: 2.25rem;
+    }
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+// ============================================
+// TABLET LANDSCAPE (768px+)
+// ============================================
+@media (min-width: 768px) {
+  .hero {
+    .hero-title {
+      font-size: 2.75rem;
+    }
+    
+    .hero-subtitle {
+      font-size: 1.125rem;
+    }
+    
+    .hero-cta {
+      flex-direction: row;
+      
+      .btn {
+        width: auto;
+      }
+    }
+  }
+  
+  .service-hero {
+    padding: 6rem 0;
+    
+    .service-title {
+      font-size: 2.5rem;
+    }
+  }
+  
+  .section {
+    padding: 4rem 0;
+  }
+  
+  .post-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .site-footer {
+    .footer-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+// ============================================
+// DESKTOP (992px+)
+// ============================================
+@media (min-width: 992px) {
   // Show nav, hide mobile toggle
   .primary-nav {
     display: flex;
+    position: static;
+    flex-direction: row;
+    background: transparent;
+    padding: 0;
+    
+    .nav-menu {
+      flex-direction: row;
+      
+      li {
+        border: none;
+        padding: 0;
+      }
+    }
+    
+    .nav-item.has-dropdown {
+      .dropdown-menu {
+        position: absolute;
+        display: none;
+        background: #1a1a1a;
+        border: 1px solid #333;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+        padding: 0.5rem 0;
+        
+        li {
+          a {
+            color: #d4d4d4;
+            padding: 0.5rem 1rem;
+            
+            &:hover {
+              background: #262626;
+            }
+          }
+        }
+      }
+      
+      &:hover .dropdown-menu {
+        display: block;
+      }
+    }
   }
   
   .mobile-menu-toggle {
@@ -33,14 +276,62 @@
     display: none;
   }
   
-  // Adjust main padding for fixed header
-  .site-main {
-    padding-bottom: $space-24;
+  .hero {
+    .hero-title {
+      font-size: 3.5rem;
+    }
+  }
+  
+  .pricing-grid {
+    grid-template-columns: repeat(3, 1fr);
+    
+    .pricing-card.featured {
+      transform: scale(1.05);
+    }
+  }
+  
+  .two-col-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    
+    &.reverse-on-mobile {
+      > div:first-child,
+      > div:last-child {
+        order: unset;
+      }
+    }
+  }
+  
+  .site-footer {
+    .footer-grid {
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
+    
+    .footer-bottom {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left;
+    }
+  }
+  
+  .section {
+    padding: 5rem 0;
   }
 }
 
-@media (min-width: $breakpoint-xl) {
-  // Large desktop styles
+// ============================================
+// LARGE DESKTOP (1200px+)
+// ============================================
+@media (min-width: 1200px) {
+  .hero {
+    .hero-title {
+      font-size: 4rem;
+    }
+  }
+  
+  .post-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 // Print styles
@@ -48,7 +339,8 @@
   .site-header,
   .site-footer,
   .sticky-mobile-cta,
-  .nav-cta {
+  .nav-cta,
+  .mobile-menu-toggle {
     display: none !important;
   }
   
@@ -63,7 +355,7 @@
   
   a {
     text-decoration: underline;
-    color: $primary;
+    color: #000;
   }
   
   h1, h2, h3 {
