@@ -1,4 +1,4 @@
-// Page-specific styles
+// Page-specific styles - Dark Theme
 
 // Homepage
 .home {
@@ -11,28 +11,33 @@
   }
   
   .problem-solution {
-    background: $white;
+    background: $bg-primary;
   }
   
   .how-it-works {
-    background: $grey-100;
+    background: $bg-secondary;
   }
   
   .pricing-preview {
-    background: $white;
+    background: $bg-primary;
   }
 }
 
-// Service pages
+// Service pages - Dark
 .service-page {
   .service-hero {
-    background: $grey-100;
+    background: $bg-secondary;
     padding: $space-16 0;
     text-align: center;
     
     .service-title {
       max-width: 800px;
       margin: 0 auto;
+      color: $primary;
+    }
+    
+    .hero-subtitle {
+      color: $grey-500;
     }
   }
   
@@ -41,10 +46,16 @@
     
     h2 {
       margin-top: $space-12;
+      color: $primary;
     }
     
     h3 {
       margin-top: $space-8;
+      color: $primary;
+    }
+    
+    p, li {
+      color: $grey-600;
     }
   }
   
@@ -55,6 +66,7 @@
     li {
       padding-left: $space-8;
       position: relative;
+      color: $grey-600;
       
       &::before {
         content: '✓';
@@ -67,7 +79,7 @@
   }
 }
 
-// Blog
+// Blog - Dark
 .blog-index {
   .post-grid {
     display: grid;
@@ -84,19 +96,20 @@
   }
   
   .post-card {
-    background: $white;
-    border: 1px solid $grey-200;
+    background: $bg-card;
+    border: 1px solid $grey-300;
     border-radius: 8px;
     overflow: hidden;
     transition: box-shadow $transition-base;
     
     &:hover {
       box-shadow: $shadow-md;
+      border-color: $grey-400;
     }
     
     .post-image {
       aspect-ratio: 16/9;
-      background: $grey-200;
+      background: $bg-tertiary;
     }
     
     .post-content {
@@ -130,16 +143,17 @@
   }
 }
 
-// Individual blog post
+// Individual blog post - Dark
 .post {
   .post-header {
     text-align: center;
     padding: $space-16 0;
-    background: $grey-100;
+    background: $bg-secondary;
     
     .post-title {
       max-width: 900px;
       margin: 0 auto $space-4;
+      color: $primary;
     }
     
     .post-meta {
@@ -155,11 +169,17 @@
     h2 {
       margin-top: $space-12;
       padding-bottom: $space-4;
-      border-bottom: 2px solid $grey-200;
+      border-bottom: 2px solid $grey-300;
+      color: $primary;
     }
     
     h3 {
       margin-top: $space-8;
+      color: $primary;
+    }
+    
+    p, li {
+      color: $grey-600;
     }
     
     ul, ol {
@@ -171,17 +191,21 @@
       padding-left: $space-6;
       margin: $space-8 0;
       font-style: italic;
-      color: $grey-700;
+      color: $grey-500;
     }
   }
 }
 
-// FAQ page
+// FAQ page - Dark
 .faq-page {
   .faq-hero {
-    background: $grey-100;
+    background: $bg-secondary;
     padding: $space-16 0;
     text-align: center;
+    
+    h1 {
+      color: $primary;
+    }
   }
   
   .faq-content {

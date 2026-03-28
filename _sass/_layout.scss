@@ -1,4 +1,4 @@
-// Layout styles
+// Layout styles - Dark Theme
 
 .container {
   max-width: $container-max;
@@ -16,14 +16,15 @@
   padding: 0 $space-4;
 }
 
-// Header
+// Header - Dark
 .site-header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  background: $white;
-  border-bottom: 1px solid $grey-200;
+  background: rgba($bg-primary, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid $grey-300;
   z-index: 1000;
   
   .header-inner {
@@ -55,7 +56,7 @@
   }
 }
 
-// Navigation
+// Navigation - Dark
 .primary-nav {
   display: none;
   
@@ -83,8 +84,8 @@
       position: absolute;
       top: 100%;
       left: 0;
-      background: $white;
-      border: 1px solid $grey-200;
+      background: $bg-tertiary;
+      border: 1px solid $grey-300;
       border-radius: 4px;
       box-shadow: $shadow-lg;
       min-width: 220px;
@@ -105,7 +106,7 @@
           transition: all $transition-fast;
           
           &:hover {
-            background: $grey-100;
+            background: $bg-secondary;
             color: $accent;
           }
         }
@@ -121,7 +122,7 @@
 .nav-link {
   font-size: $text-sm;
   font-weight: 500;
-  color: $grey-700;
+  color: $grey-600;
   text-decoration: none;
   transition: color $transition-fast;
   
@@ -131,7 +132,7 @@
   }
 }
 
-// Mobile menu toggle
+// Mobile menu toggle - Dark
 .mobile-menu-toggle {
   display: flex;
   align-items: center;
@@ -202,9 +203,9 @@
   }
 }
 
-// Hero section
+// Hero section - Dark
 .hero {
-  background: linear-gradient(135deg, $grey-100 0%, $white 100%);
+  background: linear-gradient(135deg, $bg-secondary 0%, $bg-primary 100%);
   padding: $space-16 0;
   
   @media (min-width: $breakpoint-md) {
@@ -220,6 +221,7 @@
   .hero-title {
     font-size: $text-3xl;
     margin-bottom: $space-6;
+    color: $primary;
     
     @media (min-width: $breakpoint-md) {
       font-size: $text-5xl;
@@ -228,11 +230,19 @@
   
   .hero-subtitle {
     font-size: $text-lg;
-    color: $grey-600;
+    color: $grey-500;
     margin-bottom: $space-8;
     
     @media (min-width: $breakpoint-md) {
       font-size: $text-xl;
+    }
+  }
+  
+  .hero-body {
+    color: $grey-600;
+    
+    p {
+      color: $grey-600;
     }
   }
   
@@ -249,17 +259,18 @@
   }
 }
 
-// Footer
+// Footer - Dark
 .site-footer {
-  background: $grey-900;
-  color: $grey-300;
+  background: $bg-secondary;
+  color: $grey-600;
   padding: $space-16 0 $space-8;
+  border-top: 1px solid $grey-300;
   
   a {
-    color: $grey-300;
+    color: $grey-600;
     
     &:hover {
-      color: $white;
+      color: $primary;
     }
   }
   
@@ -279,7 +290,7 @@
   }
   
   .footer-title {
-    color: $white;
+    color: $primary;
     font-size: $text-xl;
     margin-bottom: $space-4;
   }
@@ -287,10 +298,11 @@
   .footer-desc {
     font-size: $text-sm;
     line-height: $leading-relaxed;
+    color: $grey-500;
   }
   
   .footer-heading {
-    color: $white;
+    color: $primary;
     font-size: $text-sm;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -314,7 +326,7 @@
   }
   
   .footer-bottom {
-    border-top: 1px solid $grey-800;
+    border-top: 1px solid $grey-300;
     padding-top: $space-8;
     display: flex;
     flex-direction: column;
