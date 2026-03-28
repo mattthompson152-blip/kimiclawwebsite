@@ -1,0 +1,129 @@
+<!-- Schema Markup for Local Business -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Sing The Easy Way",
+  "description": "Online singing lessons with celebrity vocal coach Matt Thompson. 25+ years experience teaching recording artists and beginners worldwide.",
+  "url": "https://singtheeasyway.com",
+  "logo": "https://singtheeasyway.com/assets/images/logo.png",
+  "image": "https://singtheeasyway.com/assets/images/matt-thompson.jpg",
+  "email": "matt@singtheeasyway.com",
+  "priceRange": "££",
+  "currenciesAccepted": "GBP, USD, EUR",
+  "paymentAccepted": "Credit Card, PayPal, Bank Transfer",
+  "areaServed": {
+    "@type": "Place",
+    "name": "Worldwide"
+  },
+  "serviceType": [
+    "Online Singing Lessons",
+    "Virtual Vocal Coaching",
+    "Remote Singing Lessons",
+    "Celebrity Vocal Coaching"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Matt Thompson",
+    "jobTitle": "Celebrity Vocal Coach",
+    "description": "Professional vocal coach with 25+ years experience teaching recording artists, film stars, and beginners."
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "50"
+  },
+  "sameAs": [
+    "https://facebook.com/singtheeasyway",
+    "https://instagram.com/singtheeasyway",
+    "https://youtube.com/singtheeasyway"
+  ]
+}
+</script>
+
+<!-- Service Schema -->
+{% if page.layout == 'service' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "{{ page.title }}",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Sing The Easy Way"
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "Worldwide"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "25.00",
+    "priceCurrency": "GBP",
+    "availability": "https://schema.org/InStock"
+  }
+}
+</script>
+{% endif %}
+
+<!-- FAQ Schema -->
+{% if page.url == '/faq/' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What happens in the first lesson?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Your first lesson is a vocal assessment and goal-setting session. We discuss your singing history, assess your current vocal strengths, work through exercises, and create a personalized plan for your development."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need any special equipment for online lessons?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely not. If you have a smartphone, tablet, or computer with a camera and internet connection, you're ready to go. Headphones are recommended but not required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How quickly will I see improvement?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most students notice changes immediately in their first lesson. Sustainable improvement typically shows within 2-4 weeks of consistent practice."
+      }
+    }
+  ]
+}
+</script>
+{% endif %}
+
+<!-- Blog Posting Schema -->
+{% if page.layout == 'post' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{ page.title }}",
+  "description": "{{ page.excerpt | strip_html | truncate: 160 }}",
+  "url": "{{ page.url | absolute_url }}",
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "author": {
+    "@type": "Person",
+    "name": "Matt Thompson"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Sing The Easy Way",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://singtheeasyway.com/assets/images/logo.png"
+    }
+  }
+}
+</script>
+{% endif %}

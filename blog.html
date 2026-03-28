@@ -1,0 +1,41 @@
+---
+layout: default
+title: "Singing Tips, Techniques & Vocal Health Advice"
+description: "Expert singing advice from celebrity vocal coach Matt Thompson. Learn vocal techniques, warm-ups, and performance tips."
+permalink: /blog/
+---
+
+<div class="blog-index">
+  <section class="service-hero">
+    <div class="container">
+      <h1>Singing Tips & Vocal Advice</h1>
+      <p class="hero-subtitle">Expert guidance from 25+ years of professional vocal coaching</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="post-grid">
+        {% for post in site.posts %}
+        <article class="post-card">
+          <div class="post-image" style="background: linear-gradient(135deg, #c9a962 0%, #b89552 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">
+            🎵
+          </div>
+          
+          <div class="post-content">
+            <h2 class="post-title">
+              <a href="{{ post.url }}">{{ post.title }}</a>
+            </h2>
+            
+            <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 120 }}</p>
+            
+            <div class="post-meta">
+              <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+            </div>
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+</div>

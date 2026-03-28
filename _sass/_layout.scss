@@ -1,0 +1,297 @@
+// Layout styles
+
+.container {
+  max-width: $container-max;
+  margin: 0 auto;
+  padding: 0 $space-4;
+  
+  @media (min-width: $breakpoint-md) {
+    padding: 0 $space-8;
+  }
+}
+
+.container-narrow {
+  max-width: $container-narrow;
+  margin: 0 auto;
+  padding: 0 $space-4;
+}
+
+// Header
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: $white;
+  border-bottom: 1px solid $grey-200;
+  z-index: 1000;
+  
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+  }
+}
+
+.site-logo {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  
+  .logo-text {
+    font-family: $font-display;
+    font-size: $text-xl;
+    font-weight: 700;
+    color: $primary;
+    line-height: 1.2;
+  }
+  
+  .logo-tagline {
+    font-size: $text-xs;
+    color: $grey-500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+}
+
+// Navigation
+.primary-nav {
+  display: none;
+  
+  @media (min-width: $breakpoint-lg) {
+    display: flex;
+    align-items: center;
+    gap: $space-8;
+  }
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: $space-6;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link {
+  font-size: $text-sm;
+  font-weight: 500;
+  color: $grey-700;
+  text-decoration: none;
+  transition: color $transition-fast;
+  
+  &:hover {
+    color: $accent;
+    text-decoration: none;
+  }
+}
+
+// Mobile menu toggle
+.mobile-menu-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  
+  @media (min-width: $breakpoint-lg) {
+    display: none;
+  }
+  
+  .hamburger {
+    position: relative;
+    width: 24px;
+    height: 2px;
+    background: $primary;
+    
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: 24px;
+      height: 2px;
+      background: $primary;
+      left: 0;
+    }
+    
+    &::before { top: -7px; }
+    &::after { top: 7px; }
+  }
+}
+
+// Sticky mobile CTA
+.sticky-mobile-cta {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: $accent;
+  color: $white;
+  text-align: center;
+  padding: $space-3;
+  font-weight: 600;
+  text-decoration: none;
+  z-index: 999;
+  
+  @media (min-width: $breakpoint-lg) {
+    display: none;
+  }
+  
+  &:hover {
+    background: $accent-dark;
+    color: $white;
+    text-decoration: none;
+  }
+}
+
+// Main content
+.site-main {
+  padding-top: 70px;
+  padding-bottom: $space-24;
+  
+  @media (min-width: $breakpoint-lg) {
+    padding-bottom: $space-24;
+  }
+}
+
+// Hero section
+.hero {
+  background: linear-gradient(135deg, $grey-100 0%, $white 100%);
+  padding: $space-16 0;
+  
+  @media (min-width: $breakpoint-md) {
+    padding: $space-24 0;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .hero-title {
+    font-size: $text-3xl;
+    margin-bottom: $space-6;
+    
+    @media (min-width: $breakpoint-md) {
+      font-size: $text-5xl;
+    }
+  }
+  
+  .hero-subtitle {
+    font-size: $text-lg;
+    color: $grey-600;
+    margin-bottom: $space-8;
+    
+    @media (min-width: $breakpoint-md) {
+      font-size: $text-xl;
+    }
+  }
+  
+  .hero-cta {
+    display: flex;
+    flex-direction: column;
+    gap: $space-4;
+    align-items: center;
+    
+    @media (min-width: $breakpoint-sm) {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+}
+
+// Footer
+.site-footer {
+  background: $grey-900;
+  color: $grey-300;
+  padding: $space-16 0 $space-8;
+  
+  a {
+    color: $grey-300;
+    
+    &:hover {
+      color: $white;
+    }
+  }
+  
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $space-10;
+    margin-bottom: $space-12;
+    
+    @media (min-width: $breakpoint-md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    @media (min-width: $breakpoint-lg) {
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
+  }
+  
+  .footer-title {
+    color: $white;
+    font-size: $text-xl;
+    margin-bottom: $space-4;
+  }
+  
+  .footer-desc {
+    font-size: $text-sm;
+    line-height: $leading-relaxed;
+  }
+  
+  .footer-heading {
+    color: $white;
+    font-size: $text-sm;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: $space-4;
+  }
+  
+  .footer-links,
+  .footer-contact {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    li {
+      margin-bottom: $space-3;
+    }
+    
+    a {
+      font-size: $text-sm;
+      text-decoration: none;
+    }
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid $grey-800;
+    padding-top: $space-8;
+    display: flex;
+    flex-direction: column;
+    gap: $space-4;
+    
+    @media (min-width: $breakpoint-md) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  
+  .footer-legal {
+    display: flex;
+    list-style: none;
+    gap: $space-6;
+    padding: 0;
+    margin: 0;
+    
+    a {
+      font-size: $text-sm;
+    }
+  }
+}

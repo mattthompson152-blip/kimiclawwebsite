@@ -1,0 +1,192 @@
+// Page-specific styles
+
+// Homepage
+.home {
+  .hero {
+    padding: $space-20 0;
+    
+    @media (min-width: $breakpoint-md) {
+      padding: $space-24 0;
+    }
+  }
+  
+  .problem-solution {
+    background: $white;
+  }
+  
+  .how-it-works {
+    background: $grey-100;
+  }
+  
+  .pricing-preview {
+    background: $white;
+  }
+}
+
+// Service pages
+.service-page {
+  .service-hero {
+    background: $grey-100;
+    padding: $space-16 0;
+    text-align: center;
+    
+    .service-title {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  }
+  
+  .service-content {
+    padding: $space-16 0;
+    
+    h2 {
+      margin-top: $space-12;
+    }
+    
+    h3 {
+      margin-top: $space-8;
+    }
+  }
+  
+  .benefits-list {
+    list-style: none;
+    padding: 0;
+    
+    li {
+      padding-left: $space-8;
+      position: relative;
+      
+      &::before {
+        content: '✓';
+        position: absolute;
+        left: 0;
+        color: $accent;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+// Blog
+.blog-index {
+  .post-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $space-8;
+    
+    @media (min-width: $breakpoint-md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    @media (min-width: $breakpoint-lg) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .post-card {
+    background: $white;
+    border: 1px solid $grey-200;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow $transition-base;
+    
+    &:hover {
+      box-shadow: $shadow-md;
+    }
+    
+    .post-image {
+      aspect-ratio: 16/9;
+      background: $grey-200;
+    }
+    
+    .post-content {
+      padding: $space-6;
+    }
+    
+    .post-title {
+      font-size: $text-xl;
+      margin-bottom: $space-3;
+      
+      a {
+        color: $primary;
+        text-decoration: none;
+        
+        &:hover {
+          color: $accent;
+        }
+      }
+    }
+    
+    .post-excerpt {
+      color: $grey-600;
+      font-size: $text-sm;
+      margin-bottom: $space-4;
+    }
+    
+    .post-meta {
+      font-size: $text-sm;
+      color: $grey-500;
+    }
+  }
+}
+
+// Individual blog post
+.post {
+  .post-header {
+    text-align: center;
+    padding: $space-16 0;
+    background: $grey-100;
+    
+    .post-title {
+      max-width: 900px;
+      margin: 0 auto $space-4;
+    }
+    
+    .post-meta {
+      color: $grey-500;
+    }
+  }
+  
+  .post-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: $space-12 0;
+    
+    h2 {
+      margin-top: $space-12;
+      padding-bottom: $space-4;
+      border-bottom: 2px solid $grey-200;
+    }
+    
+    h3 {
+      margin-top: $space-8;
+    }
+    
+    ul, ol {
+      margin-bottom: $space-6;
+    }
+    
+    blockquote {
+      border-left: 4px solid $accent;
+      padding-left: $space-6;
+      margin: $space-8 0;
+      font-style: italic;
+      color: $grey-700;
+    }
+  }
+}
+
+// FAQ page
+.faq-page {
+  .faq-hero {
+    background: $grey-100;
+    padding: $space-16 0;
+    text-align: center;
+  }
+  
+  .faq-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: $space-12 0;
+  }
+}

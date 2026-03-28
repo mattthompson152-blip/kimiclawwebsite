@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  {% seo %}
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+  
+  <!-- Preconnect to external domains -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+  
+  <!-- Schema Markup -->
+  {% include schema.html %}
+  
+  <!-- ConvertKit / Email Platform Script -->
+  <script>
+    // Add your ConvertKit or Mailchimp embed code here
+    // Example for ConvertKit:
+    // (function(d, s, id) {
+    //   var js, fjs = d.getElementsByTagName(s)[0];
+    //   if (d.getElementById(id)) return;
+    //   js = d.createElement(s); js.id = id;
+    //   js.src = '//YOUR_CONVERTKIT_SCRIPT.js';
+    //   fjs.parentNode.insertBefore(js, fjs);
+    // }(document, 'script', 'convertkit-script'));
+  </script>
+</head>
+<body class="{% if page.layout %}{{ page.layout }}{% endif %}">
+  
+  {% include header.html %}
+  
+  <main id="main-content" class="site-main">
+    {{ content }}
+  </main>
+  
+  {% include footer.html %}
+  
+  <!-- SimplyBook.me Widget Script -->
+  <script>
+    // Add your SimplyBook.me widget code here
+    // It will look something like:
+    // <script src="//widget.simplybook.me/v2/widget/widget.js" type="text/javascript"></script>
+    // <script type="text/javascript">
+    //   var widget = new SimplybookWidget({
+    //     "widget_type": "button",
+    //     "url": "https://yourstudio.simplybook.me",
+    //     ...
+    //   });
+    // </script>
+  </script>
+  
+  <!-- Main JavaScript -->
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

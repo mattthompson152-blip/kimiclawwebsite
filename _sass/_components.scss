@@ -1,0 +1,281 @@
+// Components
+
+// Buttons
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: $space-3 $space-6;
+  font-size: $text-base;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all $transition-fast;
+  
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.btn-primary {
+  background: $accent;
+  color: $white;
+  border-color: $accent;
+  
+  &:hover {
+    background: $accent-dark;
+    border-color: $accent-dark;
+    color: $white;
+  }
+}
+
+.btn-secondary {
+  background: transparent;
+  color: $accent;
+  border-color: $accent;
+  
+  &:hover {
+    background: $accent;
+    color: $white;
+  }
+}
+
+.btn-large {
+  padding: $space-4 $space-8;
+  font-size: $text-lg;
+}
+
+// Cards
+.card {
+  background: $white;
+  border: 1px solid $grey-200;
+  border-radius: 8px;
+  padding: $space-6;
+  box-shadow: $shadow-sm;
+  transition: box-shadow $transition-base;
+  
+  &:hover {
+    box-shadow: $shadow-md;
+  }
+}
+
+.card-title {
+  font-size: $text-xl;
+  margin-bottom: $space-3;
+}
+
+// Stats
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $space-6;
+  text-align: center;
+  padding: $space-10 0;
+  border-top: 1px solid $grey-200;
+  border-bottom: 1px solid $grey-200;
+  margin: $space-10 0;
+}
+
+.stat-number {
+  font-family: $font-display;
+  font-size: $text-4xl;
+  font-weight: 700;
+  color: $accent;
+  display: block;
+}
+
+.stat-label {
+  font-size: $text-sm;
+  color: $grey-500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+// Email capture form
+.email-capture {
+  background: $grey-100;
+  padding: $space-8;
+  border-radius: 8px;
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: $space-3;
+    
+    @media (min-width: $breakpoint-sm) {
+      flex-direction: row;
+    }
+  }
+  
+  input[type="email"] {
+    flex: 1;
+    padding: $space-3 $space-4;
+    border: 1px solid $grey-300;
+    border-radius: 4px;
+    font-size: $text-base;
+    
+    &:focus {
+      outline: none;
+      border-color: $accent;
+    }
+  }
+}
+
+// Testimonials
+.testimonial {
+  background: $white;
+  padding: $space-8;
+  border-radius: 8px;
+  box-shadow: $shadow;
+  
+  .testimonial-stars {
+    color: $accent;
+    font-size: $text-lg;
+    margin-bottom: $space-4;
+  }
+  
+  .testimonial-quote {
+    font-size: $text-lg;
+    font-style: italic;
+    color: $grey-700;
+    margin-bottom: $space-6;
+  }
+  
+  .testimonial-author {
+    font-weight: 600;
+    color: $primary;
+  }
+  
+  .testimonial-source {
+    font-size: $text-sm;
+    color: $grey-500;
+  }
+}
+
+// Pricing cards
+.pricing-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $space-6;
+  
+  @media (min-width: $breakpoint-md) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.pricing-card {
+  background: $white;
+  border: 2px solid $grey-200;
+  border-radius: 8px;
+  padding: $space-8;
+  text-align: center;
+  transition: all $transition-base;
+  
+  &:hover {
+    border-color: $accent;
+    box-shadow: $shadow-lg;
+  }
+  
+  &.featured {
+    border-color: $accent;
+    background: linear-gradient(135deg, $white 0%, $grey-100 100%);
+  }
+  
+  .pricing-price {
+    font-family: $font-display;
+    font-size: $text-4xl;
+    font-weight: 700;
+    color: $primary;
+    margin: $space-4 0;
+    
+    span {
+      font-size: $text-base;
+      font-weight: 400;
+      color: $grey-500;
+    }
+  }
+  
+  .pricing-features {
+    list-style: none;
+    padding: 0;
+    margin: $space-6 0;
+    text-align: left;
+    
+    li {
+      padding: $space-2 0;
+      border-bottom: 1px solid $grey-200;
+      
+      &::before {
+        content: '✓';
+        color: $accent;
+        font-weight: 700;
+        margin-right: $space-2;
+      }
+    }
+  }
+}
+
+// FAQ Accordion
+.faq-item {
+  border-bottom: 1px solid $grey-200;
+  
+  .faq-question {
+    width: 100%;
+    padding: $space-5 0;
+    background: none;
+    border: none;
+    text-align: left;
+    font-size: $text-lg;
+    font-weight: 600;
+    color: $primary;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    &::after {
+      content: '+';
+      font-size: $text-2xl;
+      color: $accent;
+    }
+    
+    &[aria-expanded="true"]::after {
+      content: '−';
+    }
+  }
+  
+  .faq-answer {
+    padding-bottom: $space-5;
+    color: $grey-600;
+  }
+}
+
+// Section styling
+.section {
+  padding: $space-16 0;
+  
+  @media (min-width: $breakpoint-md) {
+    padding: $space-24 0;
+  }
+  
+  &.alt {
+    background: $grey-100;
+  }
+}
+
+.section-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto $space-12;
+  
+  .section-title {
+    margin-bottom: $space-4;
+  }
+  
+  .section-subtitle {
+    font-size: $text-lg;
+    color: $grey-600;
+  }
+}

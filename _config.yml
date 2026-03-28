@@ -1,0 +1,98 @@
+# Site settings
+title: "Sing The Easy Way"
+title_separator: "|"
+subtitle: "Online Singing Lessons with Celebrity Vocal Coach Matt Thompson"
+name: "Matt Thompson"
+description: "Learn to sing with celebrity vocal coach Matt Thompson. 25+ years experience teaching recording artists & beginners. Online lessons worldwide. Book your £25 consultation today."
+url: "https://singtheeasyway.com"
+baseurl: ""
+repository: ""
+
+# SEO
+logo: "/assets/images/logo.png"
+twitter_username: 
+facebook_username: 
+instagram_username: 
+linkedin_username: 
+
+# Site Author
+author:
+  name: "Matt Thompson"
+  bio: "Celebrity vocal coach with 25+ years experience teaching recording artists, film stars, and beginners."
+  location: "United Kingdom"
+  email: "matt@singtheasyway.com"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Outputting
+permalink: /:categories/:title/
+paginate: 5
+paginate_path: /page:num/
+timezone: Europe/London
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+
+# Front Matter Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: page
+      author_profile: false
+      share: false
+
+# HTML Compression
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+# Conversion
+encoding: "utf-8"
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:name/

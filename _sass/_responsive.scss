@@ -1,0 +1,77 @@
+// Responsive styles
+
+// Mobile-first approach - these are for larger screens
+
+@media (min-width: $breakpoint-sm) {
+  // Small tablet styles
+}
+
+@media (min-width: $breakpoint-md) {
+  // Tablet styles
+  
+  .hero {
+    .hero-title {
+      font-size: $text-5xl;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-lg) {
+  // Desktop styles
+  
+  // Show nav, hide mobile toggle
+  .primary-nav {
+    display: flex;
+  }
+  
+  .mobile-menu-toggle {
+    display: none;
+  }
+  
+  // Hide sticky mobile CTA on desktop
+  .sticky-mobile-cta {
+    display: none;
+  }
+  
+  // Adjust main padding for fixed header
+  .site-main {
+    padding-bottom: $space-24;
+  }
+}
+
+@media (min-width: $breakpoint-xl) {
+  // Large desktop styles
+}
+
+// Print styles
+@media print {
+  .site-header,
+  .site-footer,
+  .sticky-mobile-cta,
+  .nav-cta {
+    display: none !important;
+  }
+  
+  .site-main {
+    padding-top: 0;
+  }
+  
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+  
+  a {
+    text-decoration: underline;
+    color: $primary;
+  }
+  
+  h1, h2, h3 {
+    page-break-after: avoid;
+  }
+  
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+  }
+}
