@@ -3,30 +3,42 @@ document.addEventListener('DOMContentLoaded', function() {
   var menuToggle = document.querySelector('.mobile-menu-toggle');
   var primaryNav = document.getElementById('primary-menu');
   
-  if (menuToggle && primaryNav) {
-    menuToggle.addEventListener('click', function(e) {
-      e.preventDefault();
-      e.stopPropagation();
-      
-      var isExpanded = this.getAttribute('aria-expanded') === 'true';
-      this.setAttribute('aria-expanded', !isExpanded);
-      primaryNav.classList.toggle('mobile-open');
-      document.body.classList.toggle('menu-open');
-    });
+  if (!menuToggle || !primaryNav) return;
+  
+  menuToggle.addEventListener('click', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
     
-    // Close menu when clicking links
-    var navLinks = primaryNav.querySelectorAll('a');
-    for (var i = 0; i < navLinks.length; i++) {
-      navLinks[i].addEventListener('click', function() {
-        menuToggle.setAttribute('aria-expanded', 'false');
-        primaryNav.classList.remove('mobile-open');
-        document.body.classList.remove('menu-open');
-      });
-    }
+    var isExpanded = this.getAttribute('aria-expanded') === 'true';
+    this.setAttribute('aria-expanded', !isExpanded);
+    primaryNav.classList.toggle('mobile-open');
+    document.body.classList.toggle('menu-open');
+  });
+  
+  // Close menu when clicking links
+  var navLinks = primaryNav.getElementsByTagName('a');
+  for (var i = 0; i < navLinks.length; i++) {
+    navLinks[i].addEventListener('click', function() {
+      menuToggle.setAttribute('aria-expanded', 'false');
+      primaryNav.classList.remove('mobile-open');
+      document.body.classList.remove('menu-open');
+    });
   }
   
-  // FAQ Accordion
+  // Close menu when clicking outside
+  document.addEventListener('click', function(e) {
+    if (!primaryNav.contains(e.target) && !menuToggle.contains(e.target)) {
+      menuToggle.setAttribute('aria-expanded', 'false');
+      primaryNav.classList.remove('mobile-open');
+      document.body.classList.remove('menu-open');
+    }
+  });
+});
+
+// FAQ Accordion
+document.addEventListener('DOMContentLoaded', function() {
   var faqQuestions = document.querySelectorAll('.faq-question');
+  
   for (var j = 0; j < faqQuestions.length; j++) {
     faqQuestions[j].addEventListener('click', function() {
       var isExpanded = this.getAttribute('aria-expanded') === 'true';
@@ -48,8 +60,10 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   }
-  
-  // Smooth scroll for anchor links
+});
+
+// Smooth scroll for anchor links
+document.addEventListener('DOMContentLoaded', function() {
   var anchorLinks = document.querySelectorAll('a[href^="#"]');
   for (var m = 0; m < anchorLinks.length; m++) {
     anchorLinks[m].addEventListener('click', function(e) {
