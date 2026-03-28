@@ -34,8 +34,13 @@
           <li class="nav-item">
             <a href="{{ '/blog' | relative_url }}" class="nav-link">Blog</a>
           </li>
-          <li class="nav-item">
-            <a href="{{ '/faq' | relative_url }}" class="nav-link">FAQ</a>
+          <li class="nav-item has-dropdown">
+            <a href="#" class="nav-link">About &darr;</a>
+            <ul class="dropdown-menu">
+              <li><a href="{{ '/celebrity-vocal-coach' | relative_url }}">About Matt</a></li>
+              <li><a href="{{ '/faq' | relative_url }}">FAQ</a></li>
+              <li><a href="{{ '/terms' | relative_url }}">Terms &amp; Conditions</a></li>
+            </ul>
           </li>
           <li class="nav-item">
             <a href="{{ '/contact' | relative_url }}" class="nav-link">Contact</a>
