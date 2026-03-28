@@ -34,7 +34,7 @@ permalink: /downloads/vocal-warmups-guide/
         <!-- REPLACE WITH YOUR CONVERTKIT/MAILCHIMP FORM -->
         <form class="form-group" action="YOUR_FORM_URL" method="post">
           <input type="email" name="email_address" placeholder="Enter your email" required>
-          <button type="submit" class="btn btn-primary">Send Me the Free Guide →</button>
+          <button type="submit" class="btn btn-primary">Send Me the Free Guide &rarr;</button>
         </form>
         
         <p style="font-size: 0.875rem; color: #737373; margin-top: 1rem;">🔒 We respect your privacy. Unsubscribe anytime.</p>

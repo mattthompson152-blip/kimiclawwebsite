@@ -99,7 +99,7 @@ permalink: /online-singing-lessons/
           <li>Custom recommendation</li>
         </ul>
         
-        <a href="#book" class="btn btn-secondary">Book Consultation →</a>
+        <a href="#book" class="btn btn-secondary">Book Consultation &rarr;</a>
       </div>
       
       <div style="background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%); padding: 2rem; border-radius: 8px; margin: 2rem 0; border: 2px solid #c9a962;">
@@ -113,7 +113,7 @@ permalink: /online-singing-lessons/
           <li>Practice notes included</li>
         </ul>
         
-        <a href="#book" class="btn btn-primary">Book Single Lesson →</a>
+        <a href="#book" class="btn btn-primary">Book Single Lesson &rarr;</a>
       </div>
       
       <div style="background: #f5f5f5; padding: 2rem; border-radius: 8px; margin: 2rem 0;">
@@ -127,7 +127,7 @@ permalink: /online-singing-lessons/
           <li>Priority booking</li>
         </ul>
         
-        <a href="#book" class="btn btn-secondary">Book Lesson Block →</a>
+        <a href="#book" class="btn btn-secondary">Book Lesson Block &rarr;</a>
       </div>
 
       <h2>Meet Your Online Singing Teacher: Matt Thompson</h2>
@@ -140,7 +140,7 @@ permalink: /online-singing-lessons/
       
       <p>I teach exclusively online from my mobile studio, bringing professional vocal coaching directly to you wherever you are in the world.</p>
       
-      <a href="{{ '/celebrity-vocal-coach' | relative_url }}" class="btn btn-secondary">Learn More About Matt →</a>
+      <a href="{{ '/celebrity-vocal-coach' | relative_url }}" class="btn btn-secondary">Learn More About Matt &rarr;</a>
 
       <h2>Ready to Start Your Singing Journey?</h2>
       
@@ -148,7 +148,7 @@ permalink: /online-singing-lessons/
       
       <p><strong>Start with a £25 consultation</strong> — a low-risk way to experience my teaching and discover what your voice can do.</p>
       
-      <a href="#book" class="btn btn-primary btn-large">Book Your Consultation Now →</a>
+      <a href="#book" class="btn btn-primary btn-large">Book Your Consultation Now &rarr;</a>
       
     </div>
   </section>

@@ -113,7 +113,7 @@ permalink: /beginner-singing-lessons/
         <h3>£25 Beginner Consultation (30 Minutes)</h3>
         <p>Perfect first step. We'll assess your voice (everyone has one!), discuss your goals, and create a plan. No pressure, no judgment — just a friendly chat about your singing journey.</p>
         
-        <a href="#book" class="btn btn-secondary">Book Beginner Consultation →</a>
+        <a href="#book" class="btn btn-secondary">Book Beginner Consultation &rarr;</a>
       </div>
       
       <div style="background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%); padding: 2rem; border-radius: 8px; margin: 2rem 0; border: 2px solid #c9a962;">
@@ -122,14 +122,14 @@ permalink: /beginner-singing-lessons/
         
         <p>Full one-to-one beginner lesson with patient, supportive instruction tailored to your pace.</p>
         
-        <a href="#book" class="btn btn-primary">Book Beginner Lesson →</a>
+        <a href="#book" class="btn btn-primary">Book Beginner Lesson &rarr;</a>
       </div>
 
       <h2>Ready to Find Your Voice?</h2>
       
       <p>The hardest part of learning to sing is taking the first step. Book a £25 consultation and discover what your voice can do. <strong>If you're not happy with your first lesson, it's free.</strong></p>
       
-      <a href="#book" class="btn btn-primary btn-large">Book Your Beginner Consultation →</a>
+      <a href="#book" class="btn btn-primary btn-large">Book Your Beginner Consultation &rarr;</a>
 
     </div>
   </section>

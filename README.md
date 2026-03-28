@@ -55,14 +55,14 @@ The built site will be in the `_site` directory.
 1. Create a new GitHub repository
 2. Push this code to the repository
 3. Enable GitHub Pages in repository settings
-4. Select "Deploy from a branch" → "main" → "/ (root)"
+4. Select "Deploy from a branch" &rarr; "main" &rarr; "/ (root)"
 5. Your site will be live at `https://yourusername.github.io/repository-name`
 
 ### Option 2: Cloudflare Pages
 
 1. Push code to GitHub
 2. Log into Cloudflare Dashboard
-3. Go to Pages → Create a project
+3. Go to Pages &rarr; Create a project
 4. Connect your GitHub repository
 5. Build settings:
    - Build command: `jekyll build`
@@ -150,7 +150,7 @@ $accent: #c9a962;  // Change to your brand color
    singtheeasyway.com
    ```
 
-2. In GitHub repository settings → Pages → Custom domain
+2. In GitHub repository settings &rarr; Pages &rarr; Custom domain
 
 3. DNS records (in your domain registrar):
    ```

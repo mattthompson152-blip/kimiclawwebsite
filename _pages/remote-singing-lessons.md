@@ -100,7 +100,7 @@ permalink: /remote-singing-lessons/
         <h3>£25 Remote Consultation (30 Minutes)>
         <p>Perfect for testing your setup on the road. We'll check your connection, assess your voice, and make sure remote lessons work from your current location.</p>
         
-        <a href="#book" class="btn btn-secondary">Book Remote Consultation →</a>
+        <a href="#book" class="btn btn-secondary">Book Remote Consultation &rarr;</a>
       </div>
       
       <div style="background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%); padding: 2rem; border-radius: 8px; margin: 2rem 0; border: 2px solid #c9a962;">
@@ -113,14 +113,14 @@ permalink: /remote-singing-lessons/
           <li>Recorded for practice on the road</li>
         </ul>
         
-        <a href="#book" class="btn btn-primary">Book Remote Lesson →</a>
+        <a href="#book" class="btn btn-primary">Book Remote Lesson &rarr;</a>
       </div>
 
       <h2>Your Voice Travels With You</h2>
       
       <p>Don't let travel interrupt your vocal progress. Remote singing lessons keep you connected to professional coaching — from hotel rooms, tour buses, beachside cafes, or mountain cabins.</p>
       
-      <a href="#book" class="btn btn-primary btn-large">Book Your Remote Consultation →</a>
+      <a href="#book" class="btn btn-primary btn-large">Book Your Remote Consultation &rarr;</a>
 
     </div>
   </section>

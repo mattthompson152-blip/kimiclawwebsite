@@ -115,7 +115,7 @@ permalink: /virtual-singing-lessons/
         <h3>£25 Virtual Consultation (30 Minutes)</h3>
         <p>Try virtual lessons with a low-risk consultation. Experience the format, assess your voice, and see if it's right for you.</p>
         
-        <a href="#book" class="btn btn-secondary">Book Virtual Consultation →</a>
+        <a href="#book" class="btn btn-secondary">Book Virtual Consultation &rarr;</a>
       </div>
       
       <div style="background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%); padding: 2rem; border-radius: 8px; margin: 2rem 0; border: 2px solid #c9a962;">
@@ -129,21 +129,21 @@ permalink: /virtual-singing-lessons/
           <li>Written practice notes</li>
         </ul>
         
-        <a href="#book" class="btn btn-primary">Book Virtual Lesson →</a>
+        <a href="#book" class="btn btn-primary">Book Virtual Lesson &rarr;</a>
       </div>
       
       <div style="background: #f5f5f5; padding: 2rem; border-radius: 8px; margin: 2rem 0;">
         <h3>£600 Ten Virtual Lessons</h3>
         <p style="color: #22c55e;">✓ Best value — Save £200 (was £800)</p>
         
-        <a href="#book" class="btn btn-secondary">Book Lesson Block →</a>
+        <a href="#book" class="btn btn-secondary">Book Lesson Block &rarr;</a>
       </div>
 
       <h2>Start Your Virtual Singing Journey</h2>
       
       <p>The best way to understand virtual singing lessons is to experience them. Book a £25 consultation and discover how convenient and effective online vocal coaching can be.</p>
       
-      <a href="#book" class="btn btn-primary btn-large">Book Your Virtual Consultation →</a>
+      <a href="#book" class="btn btn-primary btn-large">Book Your Virtual Consultation &rarr;</a>
 
     </div>
   </section>

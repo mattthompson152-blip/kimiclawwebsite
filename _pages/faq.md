@@ -135,7 +135,7 @@ permalink: /faq/
       
       <p>Or book a £25 consultation — it's the perfect opportunity to ask questions and experience my teaching firsthand.</p>
       
-      <a href="#book" class="btn btn-primary">Book Your Consultation →</a>
+      <a href="#book" class="btn btn-primary">Book Your Consultation &rarr;</a>
 
     </div>
   </section>

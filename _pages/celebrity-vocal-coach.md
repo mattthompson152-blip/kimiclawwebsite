@@ -102,14 +102,14 @@ permalink: /celebrity-vocal-coach/
           <li>Custom recommendation</li>
         </ul>
         
-        <a href="#book" class="btn btn-primary">Book Celebrity Consultation →</a>
+        <a href="#book" class="btn btn-primary">Book Celebrity Consultation &rarr;</a>
       </div>
 
       <h2>Start Your Celebrity Vocal Coaching Journey</h2>
       
       <p>Experience what celebrity vocal coaching feels like. In 30 minutes, you'll understand why industry professionals trust my methods — and what your voice is capable of achieving.</p>
       
-      <a href="#book" class="btn btn-primary btn-large">Book Your £25 Consultation →</a>
+      <a href="#book" class="btn btn-primary btn-large">Book Your £25 Consultation &rarr;</a>
 
     </div>
   </section>
