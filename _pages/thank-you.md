@@ -10,14 +10,14 @@ permalink: /thank-you/
   
   <h1>Thank You!</h1>
   
-  <p style="font-size: 1.25rem; color: #525252; margin-bottom: 2rem;">Your free vocal warm-ups guide is on its way to your inbox.</p>
+  <p style="font-size: 1.25rem; color: #a3a3a3; margin-bottom: 2rem;">Your free vocal warm-ups guide is on its way to your inbox.</p>
   
-  <div style="background: #f5f5f5; padding: 2rem; border-radius: 8px; margin: 3rem 0; text-align: left;">
+  <div class="card" style="margin: 3rem 0; text-align: left;">
     <h3>While you wait, why not book a consultation?</h3>
     
     <p>Experience personalized vocal coaching and discover what your voice can achieve.</p>
     
-    <ul>
+    <ul style="color: #a3a3a3;">
       <li>✓ 30-minute vocal assessment</li>
       <li>✓ Personalized technique guidance</li>
       <li>✓ Goal-setting and roadmap</li>

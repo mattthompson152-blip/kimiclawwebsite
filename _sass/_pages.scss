@@ -214,3 +214,64 @@
     padding: $space-12 0;
   }
 }
+
+// FAQ Accordion styles
+.faq-item {
+  border-bottom: 1px solid $grey-300;
+  
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.faq-question {
+  width: 100%;
+  padding: $space-6 0;
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: $text-lg;
+  font-weight: 600;
+  color: $primary;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: color $transition-fast;
+  
+  &:hover {
+    color: $accent;
+  }
+  
+  &::after {
+    content: '+';
+    font-size: $text-2xl;
+    color: $accent;
+    transition: transform $transition-fast;
+  }
+  
+  &[aria-expanded="true"] {
+    color: $accent;
+    
+    &::after {
+      content: '−';
+    }
+  }
+}
+
+.faq-answer {
+  padding: 0 0 $space-6 0;
+  
+  p {
+    color: $grey-600;
+    margin: 0;
+  }
+  
+  a {
+    color: $accent;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
