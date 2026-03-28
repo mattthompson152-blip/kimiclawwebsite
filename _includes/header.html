@@ -3,7 +3,7 @@
   <div class="container">
     <div class="header-inner">
       <!-- Logo -->
-      <a href="/" class="site-logo" aria-label="Sing The Easy Way - Home">
+      <a href="{{ '/' | relative_url }}" class="site-logo" aria-label="Sing The Easy Way - Home">
         <span class="logo-text">Sing The Easy Way</span>
         <span class="logo-tagline">Celebrity Vocal Coach</span>
       </a>
@@ -17,25 +17,25 @@
       <nav id="primary-menu" class="primary-nav" role="navigation" aria-label="Primary menu">
         <ul class="nav-menu">
           <li class="nav-item">
-            <a href="/online-singing-lessons" class="nav-link">Online Lessons</a>
+            <a href="{{ '/online-singing-lessons' | relative_url }}" class="nav-link">Online Lessons</a>
           </li>
           <li class="nav-item has-dropdown">
             <a href="#" class="nav-link" aria-haspopup="true" aria-expanded="false">Services</a>
             <ul class="dropdown-menu">
-              <li><a href="/online-singing-lessons">Online Singing Lessons</a></li>
-              <li><a href="/virtual-singing-lessons">Virtual Singing Lessons</a></li>
-              <li><a href="/remote-singing-lessons">Remote Lessons</a></li>
-              <li><a href="/beginner-singing-lessons">For Beginners</a></li>
+              <li><a href="{{ '/online-singing-lessons' | relative_url }}">Online Singing Lessons</a></li>
+              <li><a href="{{ '/virtual-singing-lessons' | relative_url }}">Virtual Singing Lessons</a></li>
+              <li><a href="{{ '/remote-singing-lessons' | relative_url }}">Remote Lessons</a></li>
+              <li><a href="{{ '/beginner-singing-lessons' | relative_url }}">For Beginners</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a href="/celebrity-vocal-coach" class="nav-link">About Matt</a>
+            <a href="{{ '/celebrity-vocal-coach' | relative_url }}" class="nav-link">About Matt</a>
           </li>
           <li class="nav-item">
-            <a href="/blog" class="nav-link">Blog</a>
+            <a href="{{ '/blog' | relative_url }}" class="nav-link">Blog</a>
           </li>
           <li class="nav-item">
-            <a href="/faq" class="nav-link">FAQ</a>
+            <a href="{{ '/faq' | relative_url }}" class="nav-link">FAQ</a>
           </li>
         </ul>
         
