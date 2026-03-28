@@ -8,10 +8,35 @@
   const primaryNav = document.getElementById('primary-menu');
 
   if (menuToggle && primaryNav) {
-    menuToggle.addEventListener('click', function() {
+    menuToggle.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      
       const isExpanded = this.getAttribute('aria-expanded') === 'true';
       this.setAttribute('aria-expanded', !isExpanded);
-      primaryNav.classList.toggle('is-open');
+      primaryNav.classList.toggle('mobile-open');
+      
+      // Toggle body scroll lock
+      document.body.classList.toggle('menu-open');
+    });
+    
+    // Close menu when clicking a link
+    const navLinks = primaryNav.querySelectorAll('a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        menuToggle.setAttribute('aria-expanded', 'false');
+        primaryNav.classList.remove('mobile-open');
+        document.body.classList.remove('menu-open');
+      });
+    });
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', function(e) {
+      if (!primaryNav.contains(e.target) && !menuToggle.contains(e.target)) {
+        menuToggle.setAttribute('aria-expanded', 'false');
+        primaryNav.classList.remove('mobile-open');
+        document.body.classList.remove('menu-open');
+      }
     });
   }
 
@@ -106,21 +131,6 @@
       
       if (!isValid) {
         e.preventDefault();
-      }
-    });
-  });
-
-  // Track CTA clicks (for analytics)
-  const ctaButtons = document.querySelectorAll('.btn-primary, .nav-cta');
-  
-  ctaButtons.forEach(button => {
-    button.addEventListener('click', function() {
-      // Google Analytics event tracking
-      if (typeof gtag !== 'undefined') {
-        gtag('event', 'click', {
-          'event_category': 'CTA',
-          'event_label': this.textContent.trim()
-        });
       }
     });
   });
