@@ -1,41 +1,38 @@
 ---
 layout: default
-title: "Singing Tips, Techniques & Vocal Health Advice"
-description: "Expert singing advice from celebrity vocal coach Matt Thompson. Learn vocal techniques, warm-ups, and performance tips."
+title: "Blog"
+description: "Singing tips, vocal health advice, and insights from celebrity vocal coach Matt Thompson."
 permalink: /blog/
 ---
 
-<div class="blog-index">
-  <section class="service-hero">
-    <div class="container">
-      <h1>Singing Tips & Vocal Advice</h1>
-      <p class="hero-subtitle">Expert guidance from 25+ years of professional vocal coaching</p>
-    </div>
-  </section>
+<section class="faq-hero">
+  <div class="container">
+    <h1>Blog</h1>
+    <p style="color: #737373;">Tips, insights, and thoughts on singing, technique, and finding your voice.</p>
+  </div>
+</section>
 
-  <section class="section">
-    <div class="container">
-      <div class="post-grid">
-        {% for post in site.posts %}
-        <article class="post-card">
-          <div class="post-image" style="background: linear-gradient(135deg, #c9a962 0%, #b89552 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">
-            🎵
-          </div>
+<section style="padding: 4rem 0;">
+  <div class="container">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+      {% for post in site.posts %}
+      <article style="background: #1a1a1a; border: 1px solid #333; border-radius: 8px; overflow: hidden;">
+        <!-- REPLACE WITH BLOG POST FEATURED IMAGE -->
+        <div style="background: #222; aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; color: #666; font-size: 0.875rem;">
+          [REPLACE WITH BLOG IMAGE]
+        </div>
+        
+        <div style="padding: 1.5rem;">
+          <div style="color: #737373; font-size: 0.875rem; margin-bottom: 0.5rem;">{{ post.date | date: "%B %d, %Y" }}</div>
           
-          <div class="post-content">
-            <h2 class="post-title">
-              <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-            </h2>
-            
-            <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 120 }}</p>
-            
-            <div class="post-meta">
-              <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
-            </div>
-          </div>
-        </article>
-        {% endfor %}
-      </div>
+          <h2 style="margin-bottom: 1rem;"><a href="{{ post.url | relative_url }}" style="color: #fff; text-decoration: none;">{{ post.title }}</a></h2>
+          
+          <p style="color: #737373; margin-bottom: 1rem;">{{ post.excerpt | strip_html | truncate: 150 }}</p>
+          
+          <a href="{{ post.url | relative_url }}" style="color: #ff6b4a;">Read more &rarr;</a>
+        </div>
+      </article>
+      {% endfor %}
     </div>
-  </section>
-</div>
+  </div>
+</section>
