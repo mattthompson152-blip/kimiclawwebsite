@@ -233,7 +233,8 @@
     &::after { top: 7px; }
   }
   
-  &[aria-expanded="true"] {
+  &[aria-expanded="true"],
+  &.is-active {
     .hamburger {
       background: transparent;
       
