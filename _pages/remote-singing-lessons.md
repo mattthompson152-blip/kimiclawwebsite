@@ -51,7 +51,7 @@ permalink: /remote-singing-lessons/
       
       <p>Tell me about your schedule and we'll figure out a plan that works.</p>
       
-      <a href="{{ '/contact' | relative_url }}" class="btn btn-primary">Contact Matt &rarr;</a>
+      <a href="{{ site.booking_url }}" class="btn btn-primary" target="_blank" rel="noopener">Contact Matt &rarr;</a>
     </div>
 
   </div>

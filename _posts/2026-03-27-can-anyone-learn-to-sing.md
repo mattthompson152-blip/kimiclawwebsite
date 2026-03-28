@@ -57,4 +57,4 @@ Worst case? You're out £25 and you know for sure.
 
 Best case? You discover you've been able to sing all along.
 
-<a href="{{ '/contact' | relative_url }}" class="btn btn-primary">Book a Consultation &rarr;</a>
+<a href="{{ site.booking_url }}" class="btn btn-primary" target="_blank" rel="noopener">Book a Consultation &rarr;</a>

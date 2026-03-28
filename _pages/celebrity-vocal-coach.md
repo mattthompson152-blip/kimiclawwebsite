@@ -76,7 +76,7 @@ permalink: /celebrity-vocal-coach/
       
       <p>30-minute assessment. We'll discuss your goals, I'll assess your voice, and you'll get a taste of how I teach. No obligation to continue.</p>
       
-      <a href="{{ '/contact' | relative_url }}" class="btn btn-primary">Book Now &rarr;</a>
+      <a href="{{ site.booking_url }}" class="btn btn-primary" target="_blank" rel="noopener">Book Now &rarr;</a>
     </div>
 
   </div>

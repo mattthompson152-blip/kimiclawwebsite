@@ -77,6 +77,6 @@ permalink: /contact/
     <h2 style="margin-bottom: 1rem;">Prefer to book directly?</h2>
     <p style="color: #737373; margin-bottom: 2rem;">Skip the form and book your lesson now through our booking system.</p>
     
-    <a href="#book" class="btn btn-primary btn-large">Book Your Lesson Now &rarr;</a>
+    <a href="{{ site.booking_url }}" class="btn btn-primary btn-large" target="_blank" rel="noopener">Book Your Lesson Now &rarr;</a>
   </div>
 </section>

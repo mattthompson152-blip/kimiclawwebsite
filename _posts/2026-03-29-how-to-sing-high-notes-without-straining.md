@@ -79,4 +79,4 @@ Stop if it hurts. Discomfort means something's wrong.
 
 ## Want Personal Guidance?
 
-These exercises work, but everyone's voice is different. <a href="{{ '/contact' | relative_url }}">Book a lesson</a> and I'll assess your specific challenges.
+These exercises work, but everyone's voice is different. <a href="{{ site.booking_url }}" target="_blank" rel="noopener">Book a lesson</a> and I'll assess your specific challenges.

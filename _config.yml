@@ -8,6 +8,10 @@ url: "https://mattthompson152-blip.github.io"
 baseurl: "/kimiclawwebsite"
 repository: ""
 
+# Booking & Contact
+booking_url: "https://simplybook.me/en/#book/singtheeasyway"  # UPDATE THIS WITH YOUR SIMPLYBOOK.ME URL
+contact_url: "/contact"  # JotForm enquiry page
+
 # SEO
 logo: "/assets/images/logo.png"
 twitter_username: 
