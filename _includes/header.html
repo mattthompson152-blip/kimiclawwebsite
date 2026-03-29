@@ -4,8 +4,7 @@
     <div class="header-inner">
       <!-- Logo -->
       <a href="{{ '/' | relative_url }}" class="site-logo" aria-label="Sing The Easy Way - Home">
-        <span class="logo-text">Sing The Easy Way</span>
-        <span class="logo-tagline">Celebrity Vocal Coach</span>
+        <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Sing The Easy Way" style="height: 40px; width: auto;">
       </a>
       
       <!-- Mobile Menu Toggle -->
@@ -19,28 +18,17 @@
           <li class="nav-item">
             <a href="{{ '/online-singing-lessons' | relative_url }}" class="nav-link">Online Lessons</a>
           </li>
-          <li class="nav-item has-dropdown">
-            <a href="#" class="nav-link" aria-haspopup="true" aria-expanded="false">Services</a>
-            <ul class="dropdown-menu">
-              <li><a href="{{ '/online-singing-lessons' | relative_url }}">Online Singing Lessons</a></li>
-              <li><a href="{{ '/virtual-singing-lessons' | relative_url }}">Virtual Singing Lessons</a></li>
-              <li><a href="{{ '/remote-singing-lessons' | relative_url }}">Remote Lessons</a></li>
-              <li><a href="{{ '/beginner-singing-lessons' | relative_url }}">For Beginners</a></li>
-            </ul>
-          </li>
           <li class="nav-item">
             <a href="{{ '/celebrity-vocal-coach' | relative_url }}" class="nav-link">About Matt</a>
           </li>
           <li class="nav-item">
             <a href="{{ '/blog' | relative_url }}" class="nav-link">Blog</a>
           </li>
-          <li class="nav-item has-dropdown">
-            <a href="#" class="nav-link">About &darr;</a>
-            <ul class="dropdown-menu">
-              <li><a href="{{ '/celebrity-vocal-coach' | relative_url }}">About Matt</a></li>
-              <li><a href="{{ '/faq' | relative_url }}">FAQ</a></li>
-              <li><a href="{{ '/terms' | relative_url }}">Terms &amp; Conditions</a></li>
-            </ul>
+          <li class="nav-item">
+            <a href="{{ '/faq' | relative_url }}" class="nav-link">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a href="{{ '/terms' | relative_url }}" class="nav-link">Terms</a>
           </li>
           <li class="nav-item">
             <a href="{{ '/contact' | relative_url }}" class="nav-link">Contact</a>
@@ -58,3 +46,13 @@
 <a href="#" class="sticky-mobile-cta" onclick="if(typeof widget !== 'undefined') { widget.open(); } return false;">
   <span>Book Now £25</span>
 </a>
+
+<!-- Floating Action Buttons -->
+<div class="floating-buttons" style="position: fixed; bottom: 20px; right: 20px; z-index: 9999; display: flex; flex-direction: column; gap: 10px;">
+  <a href="#" class="btn btn-primary" onclick="if(typeof widget !== 'undefined') { widget.open(); } return false;" style="padding: 12px 20px; font-size: 14px; box-shadow: 0 4px 12px rgba(255,107,74,0.4);">
+    Book Lesson
+  </a>
+  <a href="{{ '/contact' | relative_url }}" class="btn btn-secondary" style="padding: 12px 20px; font-size: 14px; background: #333; border-color: #333; color: #fff;">
+    Enquiry
+  </a>
+</div>

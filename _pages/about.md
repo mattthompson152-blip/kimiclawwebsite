@@ -9,7 +9,7 @@ permalink: /about/
 <section class="service-hero">
   <div class="container">
     <h1 class="service-title">About Matt Thompson</h1>
-    <p class="hero-subtitle">Celebrity Vocal Coach &bull; 25+ Years Experience &bull; Mobile Studio</p>
+    <p class="hero-subtitle">Celebrity Vocal Coach • 25+ Years Experience • Mobile Studio</p>
   </div>
 </section>
 
@@ -89,7 +89,7 @@ permalink: /about/
       
       <p>Book a £25 consultation and let's discuss what your voice can do.</p>
       
-      <a href="#" class="btn btn-primary btn-large" onclick="if(typeof widget !== 'undefined') { widget.open(); } return false;">Book a Consultation &rarr;</a>
+      <a href="#" class="btn btn-primary btn-large" onclick="if(typeof widget !== 'undefined') { widget.open(); } return false;">Book a Consultation →</a>
       
       <p style="margin-top: 1.5rem; font-size: 0.875rem; color: #737373;">Or <a href="{{ '/contact' | relative_url }}">send an enquiry</a> if you have questions first.</p>
     </div>

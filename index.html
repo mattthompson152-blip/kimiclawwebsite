@@ -5,71 +5,34 @@ description: "Learn to sing with Matt Thompson. 25+ years teaching recording art
 ---
 
 <!-- HERO SECTION -->
-<section class="hero">
+<section class="service-hero">
   <div class="container">
-    <div class="hero-content">
-      <!-- LOGO IMAGE -->
-      <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Sing The Easy Way Logo" style="max-width: 180px; margin: 0 auto 1.5rem; display: block;">
-      
-      <h1 class="hero-title">Online Singing Lessons with a Celebrity Vocal Coach</h1>
-      <p class="hero-subtitle">25+ Years Teaching Recording Artists, Film Stars, and Complete Beginners</p>
-      
-      <!-- FAVORITE PHOTO - PROMINENTLY DISPLAYED -->
-      <div style="margin: 2rem auto; max-width: 280px;">
-        <img src="{{ '/assets/images/matt-headshot.jpg' | relative_url }}" alt="Matt Thompson, your vocal coach" style="width: 100%; max-width: 280px; height: 280px; object-fit: cover; border-radius: 50%; border: 4px solid #ff6b4a; box-shadow: 0 10px 40px rgba(255,107,74,0.3); display: block; margin: 0 auto;">
-        <p style="text-align: center; color: #a3a3a3; font-size: 0.875rem; margin-top: 1rem;">Matt Thompson — Your Vocal Coach</p>
-      </div>
-      
-      <div class="hero-body">
-        <p>I teach exclusively online from my mobile studio — FaceTime, WhatsApp, or Teams. Whether you've never sung a note or you're preparing for your next gig, I'll help you find your voice.</p>
-      </div>
-      
-      <div class="hero-cta">
-        <a href="{{ '/contact' | relative_url }}" class="btn btn-secondary btn-large">Send an Enquiry &rarr;</a>
-        <a href="#" class="btn btn-primary btn-large" onclick="if(typeof widget !== 'undefined') { widget.open(); } return false;">Book a Lesson &rarr;</a>
-      </div>
+    <h1 class="service-title">Online Singing Lessons with a Celebrity Vocal Coach</h1>
+    <p class="hero-subtitle">25+ Years Teaching Recording Artists, Film Stars, and Complete Beginners</p>
+    
+    <!-- FAVORITE PHOTO - PROMINENTLY DISPLAYED -->
+    <div style="margin: 2rem auto; max-width: 280px;">
+      <img src="{{ '/assets/images/matt-headshot.jpg' | relative_url }}" alt="Matt Thompson, your vocal coach" style="width: 100%; max-width: 280px; height: 280px; object-fit: cover; border-radius: 50%; border: 4px solid #ff6b4a; box-shadow: 0 10px 40px rgba(255,107,74,0.3); display: block; margin: 0 auto;">
+      <p style="text-align: center; color: #a3a3a3; font-size: 0.875rem; margin-top: 1rem;">Matt Thompson — Your Vocal Coach</p>
+    </div>
+    
+    <p style="max-width: 700px; margin: 0 auto 2rem; color: #a3a3a3;">I teach exclusively online from my mobile studio — FaceTime, WhatsApp, or Teams. Whether you've never sung a note or you're preparing for your next gig, I'll help you find your voice.</p>
+    
+    <div class="hero-cta" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
+      <a href="{{ '/contact' | relative_url }}" class="btn btn-secondary btn-large">Send an Enquiry →</a>
+      <a href="#" class="btn btn-primary btn-large" onclick="if(typeof widget !== 'undefined') { widget.open(); } return false;">Book a Lesson →</a>
     </div>
   </div>
 </section>
 
-<!-- EMAIL CAPTURE SECTION -->
+<!-- JOTFORM SECTION -->
 <section class="section alt" style="background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%); border-top: 1px solid #333; border-bottom: 1px solid #333;">
   <div class="container">
-    <div style="max-width: 600px; margin: 0 auto; text-align: center;">
-      <h2 style="margin-bottom: 0.5rem;">Get 5 Free Vocal Warm-Ups</h2>
-      <p style="color: #a3a3a3; margin-bottom: 1.5rem;">The exact routine I teach celebrity clients before every performance. Enter your email below.</p>
+    <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+      <h2 style="margin-bottom: 0.5rem;">Get in Touch</h2>
+      <p style="color: #a3a3a3; margin-bottom: 1.5rem;">Have a question or ready to book? Send me a message below.</p>
       
-      <!-- EMAIL CAPTURE FORM -->
-      <form id="email-capture-form" style="display: flex; flex-direction: column; gap: 1rem; max-width: 400px; margin: 0 auto;">
-        <input type="email" id="capture-email" name="email" placeholder="Enter your email" required style="padding: 1rem; border: 1px solid #333; border-radius: 4px; background: #0a0a0a; color: #fff; font-size: 1rem;">
-        <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">Get Free Warm-Ups &rarr;</button>
-      </form>
-      
-      <div id="form-success" style="display: none; padding: 1.5rem; background: #1a2e1a; border: 1px solid #22c55e; border-radius: 4px;">
-        <p style="margin: 0; color: #22c55e;">✅ Check your email! Your free warm-ups guide is on its way.</p>
-      </div>
-      
-      <script>
-        document.getElementById('email-capture-form').addEventListener('submit', function(e) {
-          e.preventDefault();
-          var email = document.getElementById('capture-email').value;
-          // Store email for later integration with email service
-          localStorage.setItem('subscriber_email', email);
-          // Show success message
-          document.getElementById('email-capture-form').style.display = 'none';
-          document.getElementById('form-success').style.display = 'block';
-          // Track conversion
-          if(typeof gtag !== 'undefined') {
-            gtag('event', 'email_capture', { 'event_category': 'engagement', 'event_label': 'warmups_guide' });
-          }
-          // Redirect to download page after 2 seconds
-          setTimeout(function() {
-            window.location.href = '{{ '/downloads/vocal-warmups-guide' | relative_url }}?email=' + encodeURIComponent(email);
-          }, 2000);
-        });
-      </script>
-      
-      <p style="font-size: 0.75rem; color: #737373; margin-top: 1rem;">🔒 No spam. Unsubscribe anytime. Your email is safe with me.</p>
+      <script type="text/javascript" src="https://form.jotform.com/jsform/260871603876061"></script>
     </div>
   </div>
 </section>
@@ -100,17 +63,15 @@ description: "Learn to sing with Matt Thompson. 25+ years teaching recording art
   <div class="container">
     <div class="two-col-grid">
       <div>
-        <!-- MOTORHOME PHOTO -->
         <img src="{{ '/assets/images/matt-motorhome.jpg' | relative_url }}" alt="Matt Thompson teaching from his mobile studio motorhome" style="width: 100%; border-radius: 8px; display: block;">
       </div>
       
       <div>
         <h2>Teaching from My Motorhome</h2>
         <p>I teach exclusively online from my mobile studio. All you need is an internet connection and a phone or laptop. I work with students across the UK, Europe, North America, Australia — wherever you are, we can make it happen.</p>
-        
         <p>Lessons via FaceTime, WhatsApp, or Microsoft Teams. Flexible times to fit your schedule, whether you're an early bird or prefer evening sessions.</p>
         
-        <a href="{{ '/celebrity-vocal-coach' | relative_url }}" class="btn btn-secondary">More About Matt &rarr;</a>
+        <a href="{{ '/celebrity-vocal-coach' | relative_url }}" class="btn btn-secondary">More About Matt →</a>
       </div>
     </div>
   </div>
@@ -127,11 +88,10 @@ description: "Learn to sing with Matt Thompson. 25+ years teaching recording art
         
         <p>I teach musical theatre, rock, pop, jazz, blues, soul, R&B, funk, and gospel. Whatever you want to sing, we'll get you there.</p>
         
-        <a href="{{ '/online-singing-lessons' | relative_url }}" class="btn btn-secondary">Lesson Options &rarr;</a>
+        <a href="{{ '/online-singing-lessons' | relative_url }}" class="btn btn-secondary">Lesson Options →</a>
       </div>
       
       <div>
-        <!-- LESSON SETUP PHOTO -->
         <img src="{{ '/assets/images/lesson-setup.jpg' | relative_url }}" alt="Online singing lesson setup with Matt Thompson" style="width: 100%; border-radius: 8px; display: block;">
       </div>
     </div>
@@ -156,7 +116,7 @@ description: "Learn to sing with Matt Thompson. 25+ years teaching recording art
           <li>Technique overview</li>
           <li>No obligation</li>
         </ul>
-        <a href="#" class="btn btn-secondary" onclick="if(typeof widget !== 'undefined') { widget.open(); } return false;">Book Consultation &rarr;</a>
+        <a href="#" class="btn btn-secondary" onclick="if(typeof widget !== 'undefined') { widget.open(); } return false;">Book Consultation →</a>
       </div>
       
       <div class="pricing-card featured">
@@ -170,7 +130,7 @@ description: "Learn to sing with Matt Thompson. 25+ years teaching recording art
           <li>Lesson recording provided</li>
           <li>Practice notes included</li>
         </ul>
-        <a href="#" class="btn btn-primary" onclick="if(typeof widget !== 'undefined') { widget.open(); } return false;">Book Single Lesson &rarr;</a>
+        <a href="#" class="btn btn-primary" onclick="if(typeof widget !== 'undefined') { widget.open(); } return false;">Book Single Lesson →</a>
       </div>
       
       <div class="pricing-card">
@@ -184,7 +144,7 @@ description: "Learn to sing with Matt Thompson. 25+ years teaching recording art
           <li>Email support between lessons</li>
           <li>Priority booking</li>
         </ul>
-        <a href="#" class="btn btn-secondary" onclick="if(typeof widget !== 'undefined') { widget.open(); } return false;">Book Lesson Block &rarr;</a>
+        <a href="#" class="btn btn-secondary" onclick="if(typeof widget !== 'undefined') { widget.open(); } return false;">Book Lesson Block →</a>
       </div>
     </div>
   </div>
@@ -225,8 +185,42 @@ description: "Learn to sing with Matt Thompson. 25+ years teaching recording art
   </div>
 </section>
 
-<!-- TESTIMONIALS SECTION -->
+<!-- BLOG SECTION -->
 <section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">From the Blog</h2>
+      <p class="section-subtitle">Tips, techniques, and insights for singers</p>
+    </div>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+      <div class="card">
+        <h3><a href="{{ '/blog/can-anyone-learn-to-sing' | relative_url }}" style="color: #fff; text-decoration: none;">Can Anyone Learn to Sing?</a></h3>
+        <p style="color: #a3a3a3;">The science behind vocal ability and why most people can learn to sing with the right guidance.</p>
+        <a href="{{ '/blog/can-anyone-learn-to-sing' | relative_url }}" class="btn btn-secondary" style="font-size: 14px;">Read More →</a>
+      </div>
+      
+      <div class="card">
+        <h3><a href="{{ '/blog/vocal-health-guide' | relative_url }}" style="color: #fff; text-decoration: none;">Vocal Health Guide</a></h3>
+        <p style="color: #a3a3a3;">How to keep your voice healthy, prevent strain, and recover from vocal fatigue.</p>
+        <a href="{{ '/blog/vocal-health-guide' | relative_url }}" class="btn btn-secondary" style="font-size: 14px;">Read More →</a>
+      </div>
+      
+      <div class="card">
+        <h3><a href="{{ '/blog/how-to-sing-high-notes-without-straining' | relative_url }}" style="color: #fff; text-decoration: none;">How to Sing High Notes</a></h3>
+        <p style="color: #a3a3a3;">Practical techniques for hitting high notes with power, control, and ease.</p>
+        <a href="{{ '/blog/how-to-sing-high-notes-without-straining' | relative_url }}" class="btn btn-secondary" style="font-size: 14px;">Read More →</a>
+      </div>
+    </div>
+    
+    <div style="text-align: center; margin-top: 3rem;">
+      <a href="{{ '/blog' | relative_url }}" class="btn btn-primary">View All Blog Posts →</a>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS SECTION -->
+<section class="section alt">
   <div class="container">
     <div class="section-header">
       <h2 class="section-title">What My Students Say</h2>
@@ -235,21 +229,21 @@ description: "Learn to sing with Matt Thompson. 25+ years teaching recording art
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
       <div class="testimonial">
         <div class="testimonial-stars">★★★★★</div>
-        <blockquote class="testimonial-quote">"I've had a few one-to-one lessons with Matt, and highly recommend him. I've come to understand more about my voice through these lessons than I have with other teachers. He quickly puts you at ease... He makes you work hard but you don't realise because the lessons are fun. If you're thinking about booking a lesson, just do it!"</blockquote>
+        <blockquote class="testimonial-quote">"I've had a few one-to-one lessons with Matt, and highly recommend him. I've come to understand more about my voice through these lessons than I have with other teachers."</blockquote>
         <div class="testimonial-author">One to One Vocal Tuition</div>
         <div class="testimonial-source">via Arpeggio Music</div>
       </div>
       
       <div class="testimonial">
         <div class="testimonial-stars">★★★★★</div>
-        <blockquote class="testimonial-quote">"I received 6 lessons for the 'beginners vocal workshop' as a Christmas present... The lessons were very helpful with a good balance between learning technique and singing some really good songs. I enjoyed it so much that I signed up for a second 6 week session. I feel I am confident enough to sing in front of a small audience, which was my initial goal."</blockquote>
+        <blockquote class="testimonial-quote">"I received 6 lessons for the 'beginners vocal workshop' as a Christmas present... I enjoyed it so much that I signed up for a second 6 week session."</blockquote>
         <div class="testimonial-author">Vivienne Dargan</div>
         <div class="testimonial-source">London Beginners Vocal Workshop</div>
       </div>
       
       <div class="testimonial">
         <div class="testimonial-stars">★★★★★</div>
-        <blockquote class="testimonial-quote">"I have always had an interest in singing but... no longer felt very confident in using my voice. Matt makes the class lighthearted and informal and it was a fantastic opportunity to sing alone and with others, to try new things out in a safe environment and most of all just to have fun singing."</blockquote>
+        <blockquote class="testimonial-quote">"Matt makes the class lighthearted and informal... a fantastic opportunity to sing alone and with others, to try new things out in a safe environment."</blockquote>
         <div class="testimonial-author">Former Student</div>
         <div class="testimonial-source">Group Class Participant</div>
       </div>
@@ -258,14 +252,14 @@ description: "Learn to sing with Matt Thompson. 25+ years teaching recording art
 </section>
 
 <!-- FINAL CTA -->
-<section class="section alt">
+<section class="section">
   <div class="container">
     <div style="text-align: center; max-width: 700px; margin: 0 auto;">
       <h2 class="section-title">Ready to Start?</h2>
       
       <p style="font-size: 1.125rem; color: #737373; margin-bottom: 2rem;">Send me an enquiry or book your first lesson. I'll get back to you within 24 hours.</p>
       
-      <a href="{{ '/contact' | relative_url }}" class="btn btn-primary btn-large" style="margin-bottom: 1rem;">Get in Touch &rarr;</a>
+      <a href="{{ '/contact' | relative_url }}" class="btn btn-primary btn-large" style="margin-bottom: 1rem;">Get in Touch →</a>
       
       <p><a href="mailto:matt@singtheeasyway.com" style="font-size: 0.875rem; color: #737373;">or email matt@singtheeasyway.com</a></p>
     </div>
