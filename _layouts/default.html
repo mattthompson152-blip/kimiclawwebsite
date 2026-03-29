@@ -146,24 +146,26 @@
   
   {% include footer.html %}
   
-  <!-- SimplyBook.me Widget -->
+  <!-- SimplyBook.me Widget - FIXED -->
   <script src="https://widget.simplybook.me/v2/widget/widget.js" type="text/javascript"></script>
   <script type="text/javascript">
-    var widget = new SimplybookWidget({
+    var widget = new SimplyBookWidget({
       "widget_type": "button",
       "url": "https://singtheeasyway.simplybook.me",
-      "theme": "default",
+      "theme": "air",
       "theme_settings": {
+        "timeline_modern_display": "as_slots",
         "timeline_hide_unavailable": "1",
         "hide_past_days": "0",
         "timeline_show_end_time": "0",
-        "timeline_modern_display": "as_slots",
         "sb_base_color": "#ff6b4a",
         "display_item_mode": "block",
+        "booking_nav_bg_color": "#ff6b4a",
         "body_bg_color": "#0a0a0a",
         "sb_review_image": "",
         "dark_font_color": "#ffffff",
         "light_font_color": "#a3a3a3",
+        "btn_color_1": "#ff6b4a",
         "sb_company_label_color": "#ffffff",
         "hide_img_mode": "0",
         "show_sidebar": "1",
@@ -176,7 +178,7 @@
       "app_config": {
         "clear_session": 0,
         "allow_switch_to_ada": 0,
-        " predefined": []
+        "predefined": []
       },
       "button_title": "Book Now",
       "button_background_color": "#ff6b4a",
