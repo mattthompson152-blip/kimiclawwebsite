@@ -20,6 +20,110 @@
   <!-- Styles -->
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   
+  <!-- Mobile Menu CSS (Inline for reliability) -->
+  <style>
+    /* Mobile Menu - Clean Implementation */
+    #primary-menu {
+      display: none;
+    }
+    
+    #primary-menu.is-open {
+      display: flex !important;
+      position: fixed;
+      top: 70px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #1a1a1a;
+      flex-direction: column;
+      padding: 2rem;
+      z-index: 9999;
+      overflow-y: auto;
+    }
+    
+    #primary-menu.is-open .nav-menu {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+    }
+    
+    #primary-menu.is-open .nav-menu li {
+      border-bottom: 1px solid #404040;
+      padding-bottom: 1rem;
+    }
+    
+    #primary-menu.is-open .nav-link {
+      color: #ffffff !important;
+      font-size: 1.25rem;
+      display: block;
+      padding: 0.5rem 0;
+      text-decoration: none;
+    }
+    
+    #primary-menu.is-open .nav-link:hover {
+      color: #ff6b4a !important;
+    }
+    
+    #primary-menu.is-open .nav-cta {
+      margin-top: 2rem;
+      width: 100%;
+      text-align: center;
+      display: block;
+      padding: 1rem;
+      background: #ff6b4a;
+      color: #ffffff;
+      border-radius: 4px;
+      font-size: 1.125rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    
+    #primary-menu.is-open .dropdown-menu {
+      display: block;
+      list-style: none;
+      padding: 0.5rem 0 0 1rem;
+      margin: 0.5rem 0 0 0;
+    }
+    
+    #primary-menu.is-open .dropdown-menu li {
+      border: none;
+      padding: 0.25rem 0;
+    }
+    
+    #primary-menu.is-open .dropdown-menu a {
+      color: #a3a3a3;
+      text-decoration: none;
+      font-size: 1rem;
+      display: block;
+      padding: 0.25rem 0;
+    }
+    
+    /* Desktop - hide mobile menu styles */
+    @media (min-width: 992px) {
+      #primary-menu {
+        display: flex !important;
+        position: static;
+        flex-direction: row;
+        background: transparent;
+        padding: 0;
+      }
+      
+      #primary-menu .nav-menu {
+        flex-direction: row;
+        gap: 1.5rem;
+      }
+      
+      #primary-menu .nav-menu li {
+        border: none;
+        padding: 0;
+      }
+    }
+  </style>
+  
   <!-- Schema Markup -->
   {% include schema.html %}
   
@@ -84,5 +188,6 @@
   
   <!-- Main JavaScript -->
   <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/mobile-menu.js' | relative_url }}"></script>
 </body>
 </html>
