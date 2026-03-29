@@ -24,7 +24,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /assets/images/social-share.jpg
+      image: /assets/images/matt-headshot.jpg
       og_title: "Online Singing Lessons with Celebrity Vocal Coach"
       og_description: "Learn to sing with Matt Thompson. 25+ years teaching recording artists & beginners. Book your £25 consultation."
       twitter_card: summary_large_image
