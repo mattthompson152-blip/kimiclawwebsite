@@ -68,7 +68,7 @@ permalink: /beginner-singing-lessons/
       
       <p>30-minute session. We'll talk about your goals (even if they're just "I want to sing without embarrassing myself"), I'll assess where you're starting from, and you'll get a taste of how I teach.</p>
       
-      <a href="{{ site.booking_url }}" class="btn btn-primary" target="_blank" rel="noopener">Book Your First Lesson &rarr;</a>
+      <a href="#" onclick="if(typeof widget !== 'undefined') { widget.open(); } return false;"et="_blank" rel="noopener">Book Your First Lesson &rarr;</a>
     </div>
 
   </div>

@@ -65,7 +65,7 @@ permalink: /online-singing-lessons/
       <h3>£25 Consultation (30 Minutes)</h3>
       <p>Try it out with minimal commitment. Vocal assessment, goal discussion, and a sample of my teaching approach.</p>
       
-      <a href="{{ site.booking_url }}" class="btn btn-secondary" target="_blank" rel="noopener">Book Consultation &rarr;</a>
+      <a href="#" onclick="if(typeof widget !== 'undefined') { widget.open(); } return false;"econdary" target="_blank" rel="noopener">Book Consultation &rarr;</a>
     </div>
     
     <div style="background: linear-gradient(135deg, #1a1a1a 0%, #111 100%); padding: 2rem; border-radius: 8px; margin: 2rem 0; border: 1px solid #ff6b4a;">
@@ -79,7 +79,7 @@ permalink: /online-singing-lessons/
         <li>Written practice notes</li>
       </ul>
       
-      <a href="{{ site.booking_url }}" class="btn btn-primary" target="_blank" rel="noopener">Book Lesson &rarr;</a>
+      <a href="#" onclick="if(typeof widget !== 'undefined') { widget.open(); } return false;"et="_blank" rel="noopener">Book Lesson &rarr;</a>
     </div>
 
     <p><strong>Questions?</strong> <a href="{{ '/contact' | relative_url }}">Send me an enquiry</a> — I'll get back to you within 24 hours.</p>

@@ -75,7 +75,7 @@ permalink: /virtual-singing-lessons/
       
       <p>30-minute session to try it out. Vocal assessment, goal discussion, sample exercises. No obligation.</p>
       
-      <a href="{{ site.booking_url }}" class="btn btn-primary" target="_blank" rel="noopener">Book Now &rarr;</a>
+      <a href="#" onclick="if(typeof widget !== 'undefined') { widget.open(); } return false;"et="_blank" rel="noopener">Book Now &rarr;</a>
     </div>
 
   </div>
