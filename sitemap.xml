@@ -1,63 +1,43 @@
----
-layout: null
----
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>{{ site.url }}{{ site.baseurl }}/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <loc>https://singtheeasyway.com/</loc>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>{{ site.url }}{{ site.baseurl }}/online-singing-lessons/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <loc>https://singtheeasyway.com/online-singing-lessons/</loc>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>{{ site.url }}{{ site.baseurl }}/celebrity-vocal-coach/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <loc>https://singtheeasyway.com/celebrity-vocal-coach/</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>{{ site.url }}{{ site.baseurl }}/about/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <loc>https://singtheeasyway.com/about/</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>{{ site.url }}{{ site.baseurl }}/contact/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <loc>https://singtheeasyway.com/contact/</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>{{ site.url }}{{ site.baseurl }}/faq/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <loc>https://singtheeasyway.com/faq/</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>{{ site.url }}{{ site.baseurl }}/blog/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <loc>https://singtheeasyway.com/blog/</loc>
     <priority>0.7</priority>
   </url>
-  {% for post in site.posts %}
   <url>
-    <loc>{{ site.url }}{{ site.baseurl }}{{ post.url }}</loc>
-    <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-    <priority>0.6</priority>
-  </url>
-  {% endfor %}
-  <url>
-    <loc>{{ site.url }}{{ site.baseurl }}/privacy/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <loc>https://singtheeasyway.com/privacy/</loc>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>{{ site.url }}{{ site.baseurl }}/terms/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <loc>https://singtheeasyway.com/terms/</loc>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>{{ site.url }}{{ site.baseurl }}/environmental-policy/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <loc>https://singtheeasyway.com/environmental-policy/</loc>
     <priority>0.4</priority>
   </url>
 </urlset>
