@@ -222,7 +222,7 @@ These exercises work, but everyone's voice is different. The specific adjustment
 
 If you're ready to go deeper and develop high notes that feel as easy as speaking, book a lesson. I'll assess your specific challenges and give you a personalized roadmap to range and power.
 
-<a href="{{ site.booking_url }}" class="btn btn-primary" targtarget="_blank" rel="noopener">Book a Lesson &rarr;</a>
+<a href="#" class="btn btn-primary" onclick="if(typeof widget !== 'undefined') { widget.open(); } return false;">Book a Lesson →</a>
 
 ---
 
