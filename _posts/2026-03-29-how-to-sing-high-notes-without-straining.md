@@ -5,10 +5,8 @@ description: "Practical techniques for hitting high notes with power, control, a
 date: 2026-03-29
 categories: blog
 tags: [technique, high notes, range, vocal registers, belt technique]
+featured_image: https://images.unsplash.com/photo-1516280440614-6697288d5d38?w=800&auto=format&fit=crop
 ---
-
-<!-- REPLACE WITH BLOG HEADER IMAGE -->
-<div style="display: none;">[REPLACE WITH BLOG HEADER IMAGE]</div>
 
 High notes are the number one challenge I hear from singers across all levels — from complete beginners to working professionals. "I want to sing higher without cracking." "I can hit the note but it sounds strained." "My throat hurts after singing high."
 

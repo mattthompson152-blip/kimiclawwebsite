@@ -5,10 +5,8 @@ description: "The truth about singing ability — why most people who think they
 date: 2026-03-27
 categories: blog
 tags: [beginners, mindset, vocal training, singing science]
+featured_image: https://images.unsplash.com/photo-1507838153414-b4b713384a76?w=800&auto=format&fit=crop
 ---
-
-<!-- REPLACE WITH BLOG HEADER IMAGE -->
-<div style="display: none;">[REPLACE WITH BLOG HEADER IMAGE]</div>
 
 I've heard it hundreds of times: "I can't sing." Usually said with a laugh, like it's a settled fact, a permanent condition, something genetic that you either have or you don't.
 

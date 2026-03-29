@@ -60,7 +60,7 @@ sass:
   style: compressed
 
 # Outputting
-permalink: /:categories/:title/
+permalink: /blog/:title/
 paginate: 5
 paginate_path: /page:num/
 timezone: Europe/London

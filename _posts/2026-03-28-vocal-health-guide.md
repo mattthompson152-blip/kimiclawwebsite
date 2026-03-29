@@ -5,10 +5,8 @@ description: "Practical vocal health advice from 25+ years of working with profe
 date: 2026-03-28
 categories: blog
 tags: [vocal health, warm-ups, technique, vocal care, injury prevention]
+featured_image: https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=800&auto=format&fit=crop
 ---
-
-<!-- REPLACE WITH BLOG HEADER IMAGE -->
-<div style="display: none;">[REPLACE WITH BLOG HEADER IMAGE]</div>
 
 Unlike a guitar, you can't replace your voice. Damage it badly and the consequences can be serious, potentially career-ending for professional singers. That's why vocal health matters — especially if you sing regularly, perform live, or record in the studio.
 
