@@ -65,69 +65,6 @@
     align-items: center;
     gap: $space-8;
   }
-  
-  // Mobile menu open state
-  &.mobile-open {
-    display: flex;
-    position: fixed;
-    top: 70px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: $bg-primary;
-    flex-direction: column;
-    padding: $space-6;
-    z-index: 999;
-    overflow-y: auto;
-    
-    .nav-menu {
-      flex-direction: column;
-      gap: 0;
-      width: 100%;
-      
-      .nav-item {
-        border-bottom: 1px solid $grey-300;
-        padding: $space-4 0;
-        
-        .nav-link {
-          font-size: $text-lg;
-          display: block;
-        }
-        
-        &.has-dropdown {
-          .dropdown-menu {
-            display: block;
-            position: static;
-            background: transparent;
-            border: none;
-            box-shadow: none;
-            padding: $space-2 0 0 $space-4;
-            margin-top: 0;
-            
-            li {
-              padding: $space-2 0;
-              
-              a {
-                color: $grey-600;
-                padding: $space-2 0;
-                
-                &:hover {
-                  background: transparent;
-                  color: $accent;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    
-    .nav-cta {
-      margin-top: $space-6;
-      width: 100%;
-      text-align: center;
-    }
-  }
 }
 
 .nav-menu {
