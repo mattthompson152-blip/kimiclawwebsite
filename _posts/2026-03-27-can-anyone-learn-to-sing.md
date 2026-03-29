@@ -106,7 +106,7 @@ Book a consultation. £25, 30 minutes. We'll assess where you are, discuss your 
 
 **Best case?** You discover you've been able to sing all along — you just needed someone to show you how.
 
-<a href="{{ site.booking_url }}" class="btn btn-primary" target="_blank" rel="noopener">Book a Consultation &rarr;</a>
+<a href="{{ site.booking_url }}" class="btn btn-primary" targtarget="_blank" rel="noopener">Book a Consultation &rarr;</a>
 
 ---
 

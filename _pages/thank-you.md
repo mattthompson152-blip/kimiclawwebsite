@@ -24,7 +24,7 @@ permalink: /thank-you/
       <li>✓ Only £25 — satisfaction guaranteed</li>
     </ul>
     
-    <a href="#" onclick="if(typeof widget !== 'undefined') { widget.open(); } return false;"e" style="display: inline-block; margin-top: 1rem;" target="_blank" rel="noopener">Book Your Consultation &rarr;</a>
+    <a href="#" onclick="if(typeof widget !== 'undefined') { widget.open(); } return false;"e" style="display: inline-block; margin-top: 1rem;" targtarget="_blank" rel="noopener">Book Your Consultation &rarr;</a>
   </div>
   
   <p style="color: #737373; font-size: 0.875rem;">Didn't receive the email? Check your spam folder or <a href="mailto:matt@singtheeasyway.com">contact us</a>.</p>
